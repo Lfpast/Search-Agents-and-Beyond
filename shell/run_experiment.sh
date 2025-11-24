@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Define paths and settings
-DATA_PATH="data/nq_test_100.jsonl"
-RESULTS_DIR="results"
+# Define paths and settings - modify these as needed
+DATA_PATH="../data/nq_test_100.jsonl"
+RESULTS_DIR="../results"
 MODEL="deepseek-chat"
 MAX_WORKERS=8
 
@@ -24,7 +24,7 @@ run_setting() {
     # 1. Generate Predictions
     echo "Generating predictions..."
     export PYTHONPATH=.
-    python scripts/generate_predictions.py \
+    python ../scripts/generate_predictions.py \
         --data_path "$DATA_PATH" \
         --output_prediction_path "$PRED_FILE" \
         --output_trajectory_path "$TRAJ_FILE" \
@@ -34,7 +34,7 @@ run_setting() {
 
     # 2. Evaluate with Exact Match
     echo "Evaluating with Exact Match..."
-    python scripts/grade_with_em.py \
+    python ../scripts/grade_with_em.py \
         --input "$PRED_FILE" \
         --output "$SCORE_EM_FILE"
 
@@ -42,13 +42,13 @@ run_setting() {
     # Note: Requires OPENAI_API_KEY or DeepSeek-API in .env
     # We extract the key from .env if not set
     if [ -z "$OPENAI_API_KEY" ]; then
-        if [ -f .env ]; then
-            export OPENAI_API_KEY=$(grep DeepSeek-API .env | cut -d '=' -f2 | xargs)
+        if [ -f ../.env ]; then
+            export OPENAI_API_KEY=$(grep DeepSeek-API ../.env | cut -d '=' -f2 | xargs)
         fi
     fi
 
     echo "Evaluating with LLM Judge..."
-    python scripts/grade_with_llm_judge.py \
+    python ../scripts/grade_with_llm_judge.py \
         --input "$PRED_FILE" \
         --model "$MODEL" \
         --output "$SCORE_JUDGE_FILE"
