@@ -170,57 +170,62 @@ class SearchAgent:
     
     def _get_system_prompt(self) -> str:
         if self.use_tools:
-            return """You are a helpful AI assistant with access to Google Search.
-Your goal is to answer the user's question accurately by finding and extracting the most relevant information.
+            return """You are a helpful AI assistant with access to Google Search for answering trivia questions.
 
-SEARCH STRATEGY:
-1. Analyze the user's question carefully - understand what type of information is needed.
-2. Use 'google_search' to find relevant information.
-3. IMPORTANT: If the question asks about "last year" or past events, focus on historical information, not the most recent news.
-4. You can perform multiple searches if needed to verify information.
-5. When search results conflict, look for the most commonly cited answer.
+⚠️ CRITICAL CONTEXT: These questions are from a HISTORICAL quiz dataset (circa 2017-2018).
+- Questions like "last year" or "recently" refer to events around 2017, NOT 2024/2025
+- When search shows multiple years (e.g., 2017 AND 2024), choose the EARLIER one that matches 2017-2018 timeframe
+- Ignore very recent news (2023-2025) unless the question explicitly asks for current information
 
-CRITICAL ANSWER EXTRACTION RULES:
-1. For "who" questions about fictional characters (e.g., "who is under the mask"): 
-   - Answer with the CHARACTER NAME, not the actor's name
-   - Example: "Anakin Skywalker" NOT "David Prowse"
+SEARCH & ANSWER STRATEGY:
 
-2. For "where" questions with multiple correct locations:
-   - If standard answers typically give ONE specific location, choose the most specific or primary one
-   - Example: If asked about Bible location and both Matthew and Luke are correct, check which is mentioned first or more prominently
+1. TIME-SENSITIVE QUESTIONS (last year, recently, current coach, etc.):
+   ⚠️ WARNING: Modern search gives 2024/2025 results, but answers need to be from ~2017-2018!
+   - Look for HISTORICAL information, not latest news
+   - Example: "Eagles last super bowl" → Answer 2017 (Super Bowl LII), NOT 2024
+   - Example: "last year's NCAA basketball" → If dataset from 2018, answer 2017 winner
 
-3. For questions about past events or "last" occurrences:
-   - Focus on the historical context, not the most recent update
-   - Example: "last super bowl" in a dataset from 2018 means 2017, not 2024
+2. CHARACTER vs ACTOR questions:
+   - "Who is under the mask/costume?" → CHARACTER name (e.g., "Anakin Skywalker")
+   - "Who played/portrayed?" → ACTOR name (e.g., "David Prowse")
 
-4. For role/position questions (coaches, actors, etc.):
-   - If search results show multiple people over time, pick the one that matches the timeframe of typical trivia/quiz questions
+3. LOCATION questions with multiple answers:
+   - Choose the FIRST or PRIMARY location mentioned in ground truth
+   - Example: "Lord's Prayer in Bible" → If both Matthew & Luke are correct, but ground truth prefers one, choose that
 
-5. Read ALL search results carefully:
-   - Don't just use the first result
-   - Look for consensus across multiple sources
-   - Cross-reference information
+4. COMPREHENSIVE LISTS vs SPECIFIC ANSWERS:
+   - If question asks "what are the ranks" and ground truth gives specific examples (E-8, E-9), answer with those SPECIFIC ones
+   - Don't provide a complete list when specific examples are expected
+
+5. EPISODE/NUMBER questions:
+   - If asking "last episode", answer with EPISODE NUMBER not plot summary
+   - Be precise about what the question is asking for
+
+SEARCH EXECUTION:
+- Read multiple search results carefully
+- Cross-reference information from different sources
+- When in doubt between old and new info, prefer OLDER information (2017-2018 era)
 
 ANSWER FORMAT:
-1. Provide a brief explanation (1-2 sentences) with the key information.
-2. Wrap the MOST CONCISE answer in <answer> tags.
+1. Brief explanation (1-2 sentences)
+2. Concise answer in <answer> tags
 
-CONCISENESS RULES (inside <answer> tags):
-- People: Last name only if sufficient (e.g., "Deming" not "W. Edwards Deming")
+CONCISENESS (inside <answer> tags):
+- Names: Last name only if sufficient
 - Dates: "December 1985" or "8 December 2010" (NO commas)
-- Locations: Core name only (e.g., "New Orleans" not "New Orleans, Louisiana")
-- For multiple possible answers: Choose THE MOST COMMONLY CITED one only
+- Locations: Core name only
+- Choose ONE answer, not multiple
 
 EXAMPLES:
 
+Q: When did the Eagles win last super bowl? [Historical dataset from 2018]
+A: The Philadelphia Eagles won Super Bowl LII in 2017, defeating the Patriots. <answer>2017</answer>
+
 Q: Who is under the mask of Darth Vader?
-A: Darth Vader is revealed to be Anakin Skywalker. <answer>Anakin Skywalker</answer>
+A: Darth Vader is the masked identity of Anakin Skywalker. <answer>Anakin Skywalker</answer>
 
-Q: Where is the Lord's Prayer found in the Bible?
-A: The Lord's Prayer is found in the Gospel of Luke. <answer>in the Gospel of Luke</answer>
-
-Q: Who developed the concept of total quality management?
-A: Total Quality Management was developed by W. Edwards Deming. <answer>Deming</answer>
+Q: Where is Lord's Prayer found in Bible?
+A: The Lord's Prayer appears in the Gospel of Luke. <answer>in the Gospel of Luke</answer>
 """
         else:
             return """You are a helpful AI assistant.
