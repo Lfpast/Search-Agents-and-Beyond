@@ -19,6 +19,7 @@ write_lock = threading.Lock()
 logging.getLogger("src.agent").setLevel(logging.ERROR)
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.getLogger("openai").setLevel(logging.WARNING)
+logging.getLogger("bs4").setLevel(logging.ERROR)
 
 def load_problems(data_path: str) -> list:
     """Load problems from JSONL file."""
@@ -52,12 +53,21 @@ def generate_predictions(agent, problems: list, output_path: str, trajectory_pat
             # Construct trajectory object
             steps = []
             for call in result["tool_calls"]:
-                steps.append({
+                action_type = call.get("tool", "search")
+                
+                step_info = {
                     "step_number": call["step"],
-                    "action": "search",
-                    "query": call["query"],
-                    "retrieved_documents": call.get("retrieved_documents", [])
-                })
+                    "action": action_type,
+                }
+                
+                if action_type == "google_search":
+                    step_info["query"] = call.get("query")
+                    step_info["retrieved_documents"] = call.get("retrieved_documents", [])
+                elif action_type == "browse_website":
+                    step_info["url"] = call.get("url")
+                    step_info["content_snippet"] = call.get("result", "")[:200]
+                
+                steps.append(step_info)
             
             trajectory = {
                 "id": problem["id"],
@@ -104,8 +114,8 @@ def main():
     parser.add_argument("--data_path", type=str, required=True, help="Path to input JSONL data file")
     parser.add_argument("--output_prediction_path", type=str, required=True, help="Path to save predictions JSONL file")
     parser.add_argument("--output_trajectory_path", type=str, required=True, help="Path to save trajectories JSONL file")
-    parser.add_argument("--setting", type=str, choices=["nosearch", "search"], required=True,
-                       help="Setting: 'nosearch' (baseline) or 'search' (with tool)")
+    parser.add_argument("--setting", type=str, choices=["nosearch", "search", "browsing"], required=True,
+                       help="Setting: 'nosearch' (baseline), 'search' (with search tool), or 'browsing' (with search and browsing tools)")
     parser.add_argument("--model", type=str, default="deepseek-chat", help="Model name")
     parser.add_argument("--max_workers", type=int, default=4, help="Number of parallel workers")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of problems for testing")
@@ -126,7 +136,9 @@ def main():
     if args.setting == "nosearch":
         agent = SearchAgent(use_tools=False, max_steps=1, temperature=0.0, model=args.model)
     elif args.setting == "search":
-        agent = SearchAgent(use_tools=True, max_steps=10, temperature=0.0, model=args.model)
+        agent = SearchAgent(use_tools=True, use_browsing=False, max_steps=10, temperature=0.0, model=args.model)
+    elif args.setting == "browsing":
+        agent = SearchAgent(use_tools=True, use_browsing=True, max_steps=10, temperature=0.0, model=args.model)
 
     # Generate predictions
     print(f"Generating {args.setting} predictions...")
