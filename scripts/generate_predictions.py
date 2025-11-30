@@ -66,6 +66,12 @@ def generate_predictions(agent, problems: list, output_path: str, trajectory_pat
                 elif action_type == "browse_website":
                     step_info["url"] = call.get("url")
                     step_info["content_snippet"] = call.get("result", "")[:200]
+                elif action_type == "google_shopping":
+                    step_info["query"] = call.get("query")
+                    step_info["num"] = call.get("num")
+                    step_info["page"] = call.get("page")
+                    step_info["result_snippet"] = call.get("result", "")[:200]
+                    step_info["shopping_items"] = call.get("shopping_items", [])
                 
                 steps.append(step_info)
             
@@ -114,8 +120,8 @@ def main():
     parser.add_argument("--data_path", type=str, required=True, help="Path to input JSONL data file")
     parser.add_argument("--output_prediction_path", type=str, required=True, help="Path to save predictions JSONL file")
     parser.add_argument("--output_trajectory_path", type=str, required=True, help="Path to save trajectories JSONL file")
-    parser.add_argument("--setting", type=str, choices=["nosearch", "search", "browsing"], required=True,
-                       help="Setting: 'nosearch' (baseline), 'search' (with search tool), or 'browsing' (with search and browsing tools)")
+    parser.add_argument("--setting", type=str, choices=["nosearch", "search", "browsing", "shopping"], required=True,
+                       help="Setting: 'nosearch' (baseline), 'search' (with search tool), 'browsing' (with search and browsing tools), or 'shopping' (with search and shopping tools)")
     parser.add_argument("--model", type=str, default="deepseek-chat", help="Model name")
     parser.add_argument("--max_workers", type=int, default=4, help="Number of parallel workers")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of problems for testing")
@@ -139,6 +145,8 @@ def main():
         agent = SearchAgent(use_tools=True, use_browsing=False, max_steps=10, temperature=0.0, model=args.model)
     elif args.setting == "browsing":
         agent = SearchAgent(use_tools=True, use_browsing=True, max_steps=10, temperature=0.0, model=args.model)
+    elif args.setting == "shopping":
+        agent = SearchAgent(use_tools=True, use_browsing=False, use_shopping=True, max_steps=10, temperature=0.0, model=args.model)
 
     # Generate predictions
     print(f"Generating {args.setting} predictions...")

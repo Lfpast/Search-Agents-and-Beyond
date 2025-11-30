@@ -214,3 +214,74 @@ def get_browsing_tool_definition() -> Dict[str, Any]:
             }
         }
     }
+
+def google_shopping(query: str, num: int = 10, page: int = 1) -> Dict[str, Any]:
+    """
+    Perform a Google Shopping search using the Serper API.
+    Results are localized to Hong Kong (gl='hk').
+    
+    Args:
+        query: The search query string.
+        num: Number of results to return (default 10).
+        page: Page number (default 1).
+        
+    Returns:
+        Dict: The shopping search results.
+    """
+    api_key = _get_api_key()
+    
+    if not api_key:
+        return {"error": "Serper-API key not found. Please set it in .env or environment variables."}
+
+    url = "https://google.serper.dev/shopping"
+    headers = {
+        'X-API-KEY': api_key,
+        'Content-Type': 'application/json'
+    }
+
+    payload = json.dumps({
+        "q": query,
+        "gl": "hk",
+        "num": num,
+        "page": page
+    })
+
+    try:
+        response = requests.request("POST", url, headers=headers, data=payload)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        return {"error": f"Shopping search failed: {str(e)}"}
+
+def get_shopping_tool_definition() -> Dict[str, Any]:
+    """
+    Get the tool definition for the shopping tool.
+    """
+    return {
+        "type": "function",
+        "function": {
+            "name": "google_shopping",
+            "description": "Search Google Shopping for product information, prices, and availability in Hong Kong.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The product search query."
+                    },
+                    "num": {
+                        "type": "integer",
+                        "description": "Number of results to return (default 10).",
+                        "default": 10
+                    },
+                    "page": {
+                        "type": "integer",
+                        "description": "The page number of results (default 1).",
+                        "default": 1
+                    }
+                },
+                "required": ["query"]
+            }
+        }
+    }
+
