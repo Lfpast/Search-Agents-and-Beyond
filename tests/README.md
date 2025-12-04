@@ -9,18 +9,55 @@ Quick test script for Google Maps functionality.
 
 **Usage:**
 ```bash
-cd /home/smallveg/COMP4901B_Project
 python3 tests/test_maps.py
 ```
 
 **What it does:**
 1. Searches for coffee shops in Central, Hong Kong
 2. Displays detailed information about the results
-3. Creates an interactive map visualization in `examples/test_coffee_map.html`
+3. Creates an interactive map visualization in `tests/test_coffee_map.html`
+
+### `test_scholar.py`
+Quick test script for Google Scholar functionality.
+
+**Usage:**
+```bash
+python3 tests/test_scholar.py
+```
+
+**What it does:**
+1. Searches for academic papers related to "transformer neural network"
+2. Filters results by year (2017-2024)
+3. Displays paper titles, authors, citations, and PDF links
+
+### `test_shopping.py`
+Quick test script for Google Shopping functionality.
+
+**Usage:**
+```bash
+python3 tests/test_shopping.py
+```
+
+**What it does:**
+1. Searches for "Nike Air Max 97" in Hong Kong
+2. Displays product titles, prices, sources, and ratings
+
+### `test_browsing.py`
+Quick test script for Website Browsing functionality.
+
+**Usage:**
+```bash
+python3 tests/test_browsing.py
+```
+
+**What it does:**
+1. Browses a Wikipedia page and extracts content
+2. Browses a tech website (python.org) and extracts content
+3. Displays content snippets and total character count
 
 **Expected output:**
-- Console output with place information
-- HTML map file in the `examples/` directory
+- Console output with search results or extracted content
+- For maps, an HTML map file in the `tests/` directory
 
 ## Running Tests
 

@@ -18,9 +18,11 @@ def _get_api_key():
                 with open(env_path, 'r') as f:
                     for line in f:
                         line = line.strip()
-                        # Support both "Serper-API=xxx" and "export Serper-API=xxx"
-                        if line.startswith('Serper-API=') or line.startswith('export Serper-API='):
-                            parts = line.split('=', 1)
+                        # Support "Serper-API=xxx", "export Serper-API=xxx", and spaces around =
+                        # Normalize line: remove 'export ' and strip whitespace
+                        clean_line = line.replace('export ', '').strip()
+                        if clean_line.startswith('Serper-API'):
+                            parts = clean_line.split('=', 1)
                             if len(parts) == 2:
                                 api_key = parts[1].strip()
                                 # Also set it in environ for future use
@@ -446,6 +448,87 @@ def recommend_places(places: List[Dict], top_n: int = 5, price_preference: str =
         "price_filter": price_preference,
         "algorithm": "Weighted score: Rating(40%) + Reviews(30%) + Position(30%)"
     }
+
+
+def create_map_visualization(places: List[Dict], output_file: str = "map.html") -> Dict[str, Any]:
+    """
+    Create a simple HTML map visualization using Leaflet.js.
+    
+    Args:
+        places: List of place dictionaries.
+        output_file: Path to save the HTML file.
+        
+    Returns:
+        Dict: Result with file path and number of markers.
+    """
+    try:
+        if not places:
+            return {"error": "No places to visualize"}
+            
+        # Calculate center
+        lats = [p.get("latitude") for p in places if p.get("latitude")]
+        lngs = [p.get("longitude") for p in places if p.get("longitude")]
+        
+        if not lats or not lngs:
+            return {"error": "No valid coordinates found in places"}
+            
+        center_lat = sum(lats) / len(lats)
+        center_lng = sum(lngs) / len(lngs)
+        
+        # Create markers JS
+        markers_js = ""
+        for p in places:
+            lat = p.get("latitude")
+            lng = p.get("longitude")
+            if lat and lng:
+                title = p.get("title", "Unknown").replace("'", "\\'")
+                address = p.get("address", "").replace("'", "\\'")
+                rating = p.get("rating", "N/A")
+                
+                popup_content = f"<b>{title}</b><br>{address}<br>Rating: {rating}⭐"
+                markers_js += f"L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_content}');\\n"
+
+        html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Visualization</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        body {{ margin: 0; padding: 0; }}
+        #map {{ width: 100%; height: 100vh; }}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([{center_lat}, {center_lng}], 13);
+        L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }}).addTo(map);
+        
+        {markers_js}
+    </script>
+</body>
+</html>
+        """
+        
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(os.path.abspath(output_file)), exist_ok=True)
+        
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(html_content)
+            
+        return {
+            "file": output_file,
+            "num_markers": len(lats)
+        }
+        
+    except Exception as e:
+        return {"error": f"Failed to create map: {str(e)}"}
 
 
 def get_maps_tool_definition() -> Dict[str, Any]:
