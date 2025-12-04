@@ -1,0 +1,1168 @@
+{
+  "exact_match": 0.39,
+  "f1_score": 0.5764999999999997,
+  "total_count": 100,
+  "detailed_results": [
+    {
+      "id": "nq_validation_2",
+      "question": "how many seasons of the bastard executioner are there?",
+      "student_answer": "The Bastard Executioner had only one season before it was canceled. The show aired in 2015 on FX. <answer>one season</answer>",
+      "extracted_answer": "one season",
+      "ground_truths": [
+        "one",
+        "one season"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_3",
+      "question": "when did the eagles win last super bowl?",
+      "student_answer": "The Philadelphia Eagles won their most recent Super Bowl on February 4, 2018, when they defeated the New England Patriots 41-33 in Super Bowl LII. This victory marked the franchise's first Super Bowl championship. <answer>4 February 2018</answer>",
+      "extracted_answer": "4 February 2018",
+      "ground_truths": [
+        "2017"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_0",
+      "question": "when was the last time anyone was on the moon?",
+      "student_answer": "The last time humans were on the Moon was in December 1972 during NASA's Apollo 17 mission. Astronauts Eugene Cernan and Harrison Schmitt spent about three days on the lunar surface, while Ronald Evans remained in orbit. No human has returned to the Moon since then. <answer>December 1972</answer>",
+      "extracted_answer": "December 1972",
+      "ground_truths": [
+        "14 December 1972 UTC",
+        "December 1972"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_1",
+      "question": "who wrote he ain't heavy he's my brother lyrics?",
+      "student_answer": "The lyrics to \"He Ain't Heavy, He's My Brother\" were written by American songwriter Bob Russell. He wrote the words to the music composed by Bobby Scott, and the song was first recorded by Kelly Gordon in 1969 before becoming a major hit for The Hollies later that year. <answer>Bob Russell</answer>",
+      "extracted_answer": "Bob Russell",
+      "ground_truths": [
+        "Bobby Scott",
+        "Bob Russell"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_4",
+      "question": "who won last year's ncaa women's basketball?",
+      "student_answer": "Last year's NCAA women's basketball national championship was won by the South Carolina Gamecocks, who defeated the Iowa Hawkeyes in the title game. <answer>South Carolina</answer>",
+      "extracted_answer": "South Carolina",
+      "ground_truths": [
+        "South Carolina"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_7",
+      "question": "who was the ruler of england in 1616?",
+      "student_answer": "In 1616, England was ruled by King James I, who had been on the throne since 1603 following the death of Queen Elizabeth I. He was also King James VI of Scotland, having united the crowns of the two kingdoms. <answer>James I</answer>",
+      "extracted_answer": "James I",
+      "ground_truths": [
+        "James I"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_5",
+      "question": "when did the isle of wight become an island?",
+      "student_answer": "The Isle of Wight became a separate island from mainland Britain approximately 8,000 years ago, during the Mesolithic period. This separation occurred when rising sea levels from melting glaciers flooded the Solent, the strait that now divides the island from the English coast. <answer>approximately 8,000 years ago</answer>",
+      "extracted_answer": "approximately 8,000 years ago",
+      "ground_truths": [
+        "During the last Ice Age"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_6",
+      "question": "love yourself by justin bieber is about who?",
+      "student_answer": "\"Love Yourself\" by Justin Bieber is widely interpreted as being about an ex-girlfriend, with many speculating it references his past relationship with Selena Gomez, though Bieber has never explicitly confirmed this. The song's lyrics address a former partner who is arrogant and self-absorbed. <answer>an ex-girlfriend</answer>",
+      "extracted_answer": "an ex-girlfriend",
+      "ground_truths": [
+        "Rihanna"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_10",
+      "question": "which state is located in the centre of india?",
+      "student_answer": "The state located in the geographical center of India is Madhya Pradesh. Its name literally translates to \"Central Province,\" reflecting its position in the heart of the country. It is the second-largest state in India by area. <answer>Madhya Pradesh</answer>",
+      "extracted_answer": "Madhya Pradesh",
+      "ground_truths": [
+        "Chhattisgarh",
+        "Madhya Pradesh"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_9",
+      "question": "what is the maximum data rate for the 802.11a standard select one?",
+      "student_answer": "The maximum theoretical data rate for the 802.11a Wi-Fi standard is 54 Mbps, operating in the 5 GHz frequency band. This standard was introduced in 1999 and uses Orthogonal Frequency-Division Multiplexing (OFDM) to achieve this speed. <answer>54 Mbps</answer>",
+      "extracted_answer": "54 Mbps",
+      "ground_truths": [
+        "54 Mbit/s"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_8",
+      "question": "what is the hot coffee mod in san andreas?",
+      "student_answer": "The \"Hot Coffee\" mod in Grand Theft Auto: San Andreas was an unofficial modification that unlocked a previously disabled and sexually explicit minigame involving the player character's girlfriend. The content was originally hidden in the game's code but could be accessed through third-party patches, leading to widespread controversy and an Adults Only (AO) rating from the ESRB before being re-released with the content permanently removed. <answer>An unofficial mod that unlocked a hidden, explicit minigame</answer>",
+      "extracted_answer": "An unofficial mod that unlocked a hidden, explicit minigame",
+      "ground_truths": [
+        "a normally inaccessible mini-game"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.2
+    },
+    {
+      "id": "nq_validation_11",
+      "question": "who sang i ran all the way home?",
+      "student_answer": "\"I Ran All the Way Home\" was originally performed by The Hilltoppers, a popular vocal group of the 1950s. The song was written for the 1951 film *The Strip* and became a hit for the group. <answer>The Hilltoppers</answer>",
+      "extracted_answer": "The Hilltoppers",
+      "ground_truths": [
+        "The Impalas"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_13",
+      "question": "who was the actor that played ben stone on law and order?",
+      "student_answer": "The character Ben Stone, the Executive Assistant District Attorney, was played by actor Michael Moriarty on the original *Law & Order* series. He portrayed the role from the show's premiere in 1990 until his departure in 1994. <answer>Moriarty</answer>",
+      "extracted_answer": "Moriarty",
+      "ground_truths": [
+        "Michael Moriarty"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_14",
+      "question": "who does the voice of nala in the lion king?",
+      "student_answer": "Nala in Disney's *The Lion King* is voiced by two actresses: Moira Kelly provides the speaking and singing voice for the adult Nala, while Niketa Calame voices the young cub Nala. Kelly's performance includes singing \"Can You Feel the Love Tonight\" with Matthew Broderick. <answer>Moira Kelly (adult) and Niketa Calame (young)</answer>",
+      "extracted_answer": "Moira Kelly (adult) and Niketa Calame (young)",
+      "ground_truths": [
+        "Niketa Calame",
+        "Sally Dworsky",
+        "Moira Kelly",
+        "Laura Williams"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.4444444444444445
+    },
+    {
+      "id": "nq_validation_12",
+      "question": "where did the last name wallace come from?",
+      "student_answer": "The surname Wallace is of Scottish origin, derived from the Old French term \"waleis\" meaning \"foreigner\" or \"Welshman,\" which was used to denote someone from Wales or a Celtic-speaking Strathclyde Briton. It became prominent through figures like Sir William Wallace, the 13th-century Scottish knight who led resistance against English rule. The name essentially identified a person of Welsh or Celtic heritage living in Scotland. <answer>Scotland, meaning \"Welshman\"</answer>",
+      "extracted_answer": "Scotland, meaning \"Welshman\"",
+      "ground_truths": [
+        "a Scottish surname"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_15",
+      "question": "who plays gram on the young and the restless?",
+      "student_answer": "The character of Gram on *The Young and the Restless* is played by actress Beth Maitland. She originated the role of Traci Abbott, who is often affectionately called \"Gram\" by her grandchildren, when she joined the soap opera in 1982. Maitland has played the role on and off for decades, earning a Daytime Emmy Award for her performance.\n\n<answer>Beth Maitland</answer>",
+      "extracted_answer": "Beth Maitland",
+      "ground_truths": [
+        "Max Shippee"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_16",
+      "question": "what is the oath that new citizens take?",
+      "student_answer": "New citizens of the United States take the Oath of Allegiance, which is a formal declaration of loyalty to the country and its Constitution, renouncing prior allegiances and pledging to support and defend the United States. <answer>Oath of Allegiance</answer>",
+      "extracted_answer": "Oath of Allegiance",
+      "ground_truths": [
+        "United States Oath of Allegiance"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.7499999999999999
+    },
+    {
+      "id": "nq_validation_17",
+      "question": "who is under the mask of darth vader?",
+      "student_answer": "Darth Vader's true identity is Anakin Skywalker, a former Jedi Knight who turned to the dark side of the Force and became a Sith Lord. He is the father of Luke Skywalker and Leia Organa. <answer>Anakin Skywalker</answer>",
+      "extracted_answer": "Anakin Skywalker",
+      "ground_truths": [
+        "Anakin Skywalker"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_19",
+      "question": "what age do you need to be to buy a bb gun?",
+      "student_answer": "The legal age to purchase a BB gun varies by jurisdiction, but in the United States, federal law requires buyers to be at least 18 years old. Some states and localities may have stricter regulations, such as requiring purchasers to be 21 or mandating additional permits. <answer>18</answer>",
+      "extracted_answer": "18",
+      "ground_truths": [
+        "18"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_20",
+      "question": "ethiopia flight 961 crashes in to the sea?",
+      "student_answer": "Ethiopia Airlines Flight 961 crashed into the Indian Ocean near the Comoros Islands on 23 November 1996 after being hijacked and running out of fuel. The crash resulted in the deaths of 125 of the 175 people on board. <answer>23 November 1996</answer>",
+      "extracted_answer": "23 November 1996",
+      "ground_truths": [
+        "23 November 1996"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_18",
+      "question": "who had a baby at 100 in the bible?",
+      "student_answer": "In the Bible, Sarah, the wife of Abraham, miraculously gave birth to Isaac when she was 90 years old and Abraham was 100 years old. The specific age of 100 is attributed to Abraham at the time of Isaac's birth, not Sarah. This event is recorded in Genesis 21:1-7 as a fulfillment of God's promise.\n\n<answer>Abraham</answer>",
+      "extracted_answer": "Abraham",
+      "ground_truths": [
+        "Sarah",
+        "Abraham"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_21",
+      "question": "where was percy jackson and the olympians filmed?",
+      "student_answer": "The television series *Percy Jackson and the Olympians* was primarily filmed in Vancouver, British Columbia, Canada, with various locations around the city and its surrounding areas standing in for settings like Camp Half-Blood and the Underworld. <answer>Vancouver</answer>",
+      "extracted_answer": "Vancouver",
+      "ground_truths": [
+        "Vancouver",
+        "Mission, British Columbia"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_22",
+      "question": "how many seasons of vampire diaries r there?",
+      "student_answer": "The Vampire Diaries ran for eight seasons from 2009 to 2017, totaling 171 episodes. It was a successful supernatural drama series on The CW. <answer>8</answer>",
+      "extracted_answer": "8",
+      "ground_truths": [
+        "eight",
+        "8"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_23",
+      "question": "how many episodes are there in dragon ball z?",
+      "student_answer": "Dragon Ball Z has a total of 291 episodes, which originally aired in Japan from 1989 to 1996. The series is divided into several major story arcs, including the Saiyan, Frieza, Cell, and Majin Buu sagas. <answer>291</answer>",
+      "extracted_answer": "291",
+      "ground_truths": [
+        "291 episodes",
+        "291"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_25",
+      "question": "when was the first australian prime minister elected?",
+      "student_answer": "The first Australian Prime Minister, Sir Edmund Barton, was elected following the Federation of Australia on 1 January 1901. He was appointed to the position by the first Governor-General, Lord Hopetoun, after his Protectionist Party won the first federal election held in March 1901. <answer>1901</answer>",
+      "extracted_answer": "1901",
+      "ground_truths": [
+        "Sir Edmund Barton",
+        "1901"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_26",
+      "question": "who plays matthew on anne with an e?",
+      "student_answer": "The character of Matthew Cuthbert in *Anne with an E* is portrayed by Irish-Canadian actor R.H. Thomson. He plays the kind-hearted, quiet bachelor who, along with his sister Marilla, adopts the orphan Anne Shirley. <answer>R.H. Thomson</answer>",
+      "extracted_answer": "R.H. Thomson",
+      "ground_truths": [
+        "R. H. Thomson"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.4
+    },
+    {
+      "id": "nq_validation_27",
+      "question": "who is the girl in green day 21 guns?",
+      "student_answer": "The girl in Green Day's \"21 Guns\" music video is actress and model Lisa Stelly, who portrays a woman in a troubled relationship with Billie Joe Armstrong's character. The video features a dramatic narrative of conflict and reconciliation between the couple. <answer>Lisa Stelly</answer>",
+      "extracted_answer": "Lisa Stelly",
+      "ground_truths": [
+        "Lisa Stelly"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_28",
+      "question": "who plays joker in batman the dark knight?",
+      "student_answer": "The Joker in *The Dark Knight* was portrayed by Heath Ledger, whose performance earned him a posthumous Academy Award for Best Supporting Actor. <answer>Ledger</answer>",
+      "extracted_answer": "Ledger",
+      "ground_truths": [
+        "Ledger"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_29",
+      "question": "when was the south asian association for regional co-operation (saarc) formed?",
+      "student_answer": "The South Asian Association for Regional Co-operation (SAARC) was established on 8 December 1985, with its charter signed in Dhaka, Bangladesh. <answer>8 December 1985</answer>",
+      "extracted_answer": "8 December 1985",
+      "ground_truths": [
+        "December 1985",
+        "8 December 1985"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_30",
+      "question": "when was the first hunger games book published?",
+      "student_answer": "The first Hunger Games book, written by Suzanne Collins, was published on September 14, 2008, by Scholastic. It is the opening novel of the dystopian trilogy that became a global phenomenon. <answer>14 September 2008</answer>",
+      "extracted_answer": "14 September 2008",
+      "ground_truths": [
+        "September 14, 2008",
+        "2008"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_31",
+      "question": "who did bette midler portray in the rose?",
+      "student_answer": "Bette Midler portrayed a self-destructive rock star named Mary Rose Foster, whose nickname is \"The Rose,\" in the 1979 musical drama film. Her performance earned her an Academy Award nomination for Best Actress. <answer>Mary Rose Foster</answer>",
+      "extracted_answer": "Mary Rose Foster",
+      "ground_truths": [
+        "Mary Rose Foster"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_32",
+      "question": "who is the lead singer of depeche mode?",
+      "student_answer": "The lead singer of Depeche Mode is Dave Gahan, who has been the band's primary vocalist since their formation in 1980. He is known for his distinctive baritone voice and charismatic stage presence. <answer>Dave Gahan</answer>",
+      "extracted_answer": "Dave Gahan",
+      "ground_truths": [
+        "David Gahan"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_33",
+      "question": "where did the butchers in the slaughterhouse cases live?",
+      "student_answer": "The Butchers in the Slaughterhouse Cases lived in New Orleans, Louisiana, where they operated their slaughterhouses. The cases specifically involved butchers who were challenging a Louisiana state law that created a monopoly on slaughtering operations within the city. <answer>New Orleans</answer>",
+      "extracted_answer": "New Orleans",
+      "ground_truths": [
+        "New Orleans"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_24",
+      "question": "who plays auggie in the movie the wonder?",
+      "student_answer": "In the 2022 film *The Wonder*, the character Auggie is played by actor Kíla Lord Cassidy. She portrays the younger sister of the main character Anna O'Donnell. <answer>Kíla Lord Cassidy</answer>",
+      "extracted_answer": "Kíla Lord Cassidy",
+      "ground_truths": [
+        "Jacob Tremblay"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_34",
+      "question": "who developed the concept of total quality management?",
+      "student_answer": "Total Quality Management (TQM) is a management philosophy developed primarily by American quality experts W. Edwards Deming and Joseph Juran, who built upon earlier statistical quality control concepts from Walter Shewhart and introduced their ideas to Japanese industry after World War II. Their work was instrumental in Japan's post-war industrial transformation. <answer>Deming and Juran</answer>",
+      "extracted_answer": "Deming and Juran",
+      "ground_truths": [
+        "W. Edwards Deming"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.3333333333333333
+    },
+    {
+      "id": "nq_validation_35",
+      "question": "who wrote cant get you out of my head lyrics?",
+      "student_answer": "The lyrics for \"Can't Get You Out of My Head\" were written by Cathy Dennis and Rob Davis. The song was famously performed by Kylie Minogue and became a global hit in 2001. <answer>Cathy Dennis and Rob Davis</answer>",
+      "extracted_answer": "Cathy Dennis and Rob Davis",
+      "ground_truths": [
+        "Cathy Dennis and Rob Davis",
+        "Rob Davis",
+        "Cathy Dennis"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_37",
+      "question": "when did taylor swift's first album release?",
+      "student_answer": "Taylor Swift's debut self-titled album was released on October 24, 2006, by Big Machine Records. <answer>24 October 2006</answer>",
+      "extracted_answer": "24 October 2006",
+      "ground_truths": [
+        "October 24, 2006",
+        "2005"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_36",
+      "question": "where does no game no life anime end?",
+      "student_answer": "The anime adaptation of *No Game No Life* ends at the conclusion of Volume 3 of the light novel series, specifically covering the material through the Disboard Grand Prix and the showdown against the Flügel, Jibril. It does not adapt the subsequent story arcs involving the Siren race or the Eastern Federation.\n\n<answer>End of Light Novel Volume 3</answer>",
+      "extracted_answer": "End of Light Novel Volume 3",
+      "ground_truths": [
+        "the Elkia Federation",
+        "the sixth volume"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.25
+    },
+    {
+      "id": "nq_validation_38",
+      "question": "what are the three fifty shades of grey books?",
+      "student_answer": "The three books in the *Fifty Shades* trilogy are *Fifty Shades of Grey*, *Fifty Shades Darker*, and *Fifty Shades Freed*. All three were written by E. L. James and follow the romantic relationship between Anastasia Steele and Christian Grey. <answer>Fifty Shades of Grey, Fifty Shades Darker, Fifty Shades Freed</answer>",
+      "extracted_answer": "Fifty Shades of Grey, Fifty Shades Darker, Fifty Shades Freed",
+      "ground_truths": [
+        "Fifty Shades of Grey",
+        "Fifty Shades Darker",
+        "Fifty Shades Freed"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5714285714285715
+    },
+    {
+      "id": "nq_validation_39",
+      "question": "who has the power (judicial) to make decisions in courts of law?",
+      "student_answer": "Judicial power to make decisions in courts of law is held by judges and justices, who are appointed or elected to interpret and apply the law in legal cases. They preside over trials, rule on evidence, and issue verdicts or judgments. <answer>judges</answer>",
+      "extracted_answer": "judges",
+      "ground_truths": [
+        "judges"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_41",
+      "question": "i was a great islamic scholar and mathematician who died in 1131 ce?",
+      "student_answer": "You were likely thinking of Omar Khayyam, a Persian polymath who was both a renowned Islamic scholar and mathematician, but he died in 1131 CE. He made significant contributions to mathematics, astronomy, and poetry. <answer>Omar Khayyam</answer>",
+      "extracted_answer": "Omar Khayyam",
+      "ground_truths": [
+        "Omar Khayyam"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_42",
+      "question": "who is the coach for the ottawa senators?",
+      "student_answer": "The head coach of the Ottawa Senators is Jacques Martin, who took over the role on an interim basis in December 2023. He previously coached the team from 1996 to 2004. <answer>Jacques Martin</answer>",
+      "extracted_answer": "Jacques Martin",
+      "ground_truths": [
+        "Guy Boucher"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_43",
+      "question": "last episode of what happens to my family?",
+      "student_answer": "The last episode of the South Korean television series *What Happens to My Family?* aired on March 15, 2015. The show was a popular weekend family drama that concluded its 53-episode run on KBS2. <answer>15 March 2015</answer>",
+      "extracted_answer": "15 March 2015",
+      "ground_truths": [
+        "53"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_44",
+      "question": "when is the last time the vikings were in the nfc championship?",
+      "student_answer": "The Minnesota Vikings last appeared in the NFC Championship Game on 21 January 2018, where they lost to the Philadelphia Eagles 38-7. This was their most recent attempt to reach the Super Bowl. <answer>21 January 2018</answer>",
+      "extracted_answer": "21 January 2018",
+      "ground_truths": [
+        "1976",
+        "2017/18"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_45",
+      "question": "what are the colors of the netherlands flag?",
+      "student_answer": "The flag of the Netherlands consists of three horizontal stripes of equal width: red at the top, white in the middle, and blue at the bottom. This tricolor design, known as the \"Prince's Flag,\" has been the national flag since 1937. <answer>red, white, blue</answer>",
+      "extracted_answer": "red, white, blue",
+      "ground_truths": [
+        "blue",
+        "white",
+        "red"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_40",
+      "question": "what are the ranks in the us navy?",
+      "student_answer": "The United States Navy uses a structured ranking system divided into enlisted personnel, warrant officers, and commissioned officers, with specific pay grades (E-1 to O-10) and insignia for each rank. Enlisted ranks progress from Seaman Recruit to Master Chief Petty Officer of the Navy, while officer ranks range from Ensign to Admiral of the Navy (a rare, wartime rank). The highest active-duty rank is Fleet Admiral (O-10), though the senior-most enlisted position is the Master Chief Petty Officer of the Navy.\n\n<answer>Enlisted: Seaman Recruit, Seaman Apprentice, Seaman, Petty Officer Third Class, Petty Officer Second Class, Petty Officer First Class, Chief Petty Officer, Senior Chief Petty Officer, Master Chief Petty Officer, Master Chief Petty Officer of the Navy. Warrant Officers: Chief Warrant Officer 2-5. Commissioned Officers: Ensign, Lieutenant Junior Grade, Lieutenant, Lieutenant Commander, Commander, Captain, Rear Admiral (Lower Half), Rear Admiral (Upper Half), Vice Admiral, Admiral, Fleet Admiral.</answer>",
+      "extracted_answer": "Enlisted: Seaman Recruit, Seaman Apprentice, Seaman, Petty Officer Third Class, Petty Officer Second Class, Petty Officer First Class, Chief Petty Officer, Senior Chief Petty Officer, Master Chief Petty Officer, Master Chief Petty Officer of the Navy. Warrant Officers: Chief Warrant Officer 2-5. Commissioned Officers: Ensign, Lieutenant Junior Grade, Lieutenant, Lieutenant Commander, Commander, Captain, Rear Admiral (Lower Half), Rear Admiral (Upper Half), Vice Admiral, Admiral, Fleet Admiral.",
+      "ground_truths": [
+        "E-8s senior chief petty officer",
+        "E-9s master chief petty officer"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.1142857142857143
+    },
+    {
+      "id": "nq_validation_47",
+      "question": "when was the last time oklahoma won a national championship in football?",
+      "student_answer": "Oklahoma's most recent national championship in football was in 2000, when the Sooners finished the season with a 13-0 record and defeated Florida State in the Orange Bowl to claim the BCS National Championship. This was their seventh consensus national title in program history. <answer>2000</answer>",
+      "extracted_answer": "2000",
+      "ground_truths": [
+        "2003",
+        "2000"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_46",
+      "question": "where is lord's prayer found in bible?",
+      "student_answer": "The Lord's Prayer is found in the New Testament, specifically in the Gospel of Matthew (chapter 6, verses 9-13) as part of the Sermon on the Mount, and a shorter version appears in the Gospel of Luke (chapter 11, verses 2-4). It is the model prayer that Jesus taught his disciples.\n\n<answer>Matthew 6:9-13 and Luke 11:2-4</answer>",
+      "extracted_answer": "Matthew 6:9-13 and Luke 11:2-4",
+      "ground_truths": [
+        "in the Gospel of Luke"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.22222222222222224
+    },
+    {
+      "id": "nq_validation_48",
+      "question": "location of the ten commandments in the bible?",
+      "student_answer": "The Ten Commandments are found in two books of the Bible: they are first given by God to Moses on Mount Sinai in the Book of Exodus (chapter 20, verses 2-17) and are later reiterated in the Book of Deuteronomy (chapter 5, verses 6-21). These passages form the core of the covenant law in the Hebrew Bible.\n\n<answer>Exodus 20 and Deuteronomy 5</answer>",
+      "extracted_answer": "Exodus 20 and Deuteronomy 5",
+      "ground_truths": [
+        "Exodus",
+        "Deuteronomy"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.33333333333333337
+    },
+    {
+      "id": "nq_validation_49",
+      "question": "where did the allies go after north africa?",
+      "student_answer": "After securing North Africa in May 1943, the Allies invaded Sicily in July 1943 and then mainland Italy in September 1943, opening a new front in Southern Europe. This campaign aimed to knock Italy out of the war and divert German forces from the Eastern Front and the planned invasion of Normandy. <answer>Sicily and Italy</answer>",
+      "extracted_answer": "Sicily and Italy",
+      "ground_truths": [
+        "Italy",
+        "the Italian Campaign"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_51",
+      "question": "what is the name of the main artery which takes blood from the heart to the body?",
+      "student_answer": "The main artery that carries oxygenated blood from the heart to the rest of the body is the aorta, which originates from the left ventricle. It is the largest artery in the human body and serves as the primary conduit for systemic circulation. <answer>aorta</answer>",
+      "extracted_answer": "aorta",
+      "ground_truths": [
+        "The aorta",
+        "aorta"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_50",
+      "question": "what is the meaning of veronica in english?",
+      "student_answer": "The name Veronica is derived from the Latin phrase \"vera icon,\" meaning \"true image,\" and traditionally refers to the cloth Saint Veronica used to wipe Jesus's face during his crucifixion, which was said to bear his true likeness. <answer>true image</answer>",
+      "extracted_answer": "true image",
+      "ground_truths": [
+        "she who brings victory"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_52",
+      "question": "who played solomon in little house on the prairie?",
+      "student_answer": "Solomon was a minor character in the \"Little House on the Prairie\" television series, specifically in the Season 9 episode titled \"The Return of Mr. Edwards.\" He was played by actor John Anderson, who was known for his many roles in Westerns and television. <answer>John Anderson</answer>",
+      "extracted_answer": "John Anderson",
+      "ground_truths": [
+        "Todd Bridges"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_53",
+      "question": "who does eric end up with in that 70s show?",
+      "student_answer": "In the series finale of *That '70s Show*, Eric Forman ends up with Donna Pinciotti, his longtime girlfriend and neighbor. After returning from Africa, they reunite and are shown together in the final scene at the Forman house. <answer>Donna</answer>",
+      "extracted_answer": "Donna",
+      "ground_truths": [
+        "Donna"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_54",
+      "question": "an object that moves around an external axis is said to be?",
+      "student_answer": "An object that moves around an external axis is said to be in rotation or undergoing rotational motion about that axis. This is distinct from an object spinning about an internal axis, which is also a form of rotation. The key characteristic is that the axis of rotation lies outside the object itself.\n\n<answer>in rotation</answer>",
+      "extracted_answer": "in rotation",
+      "ground_truths": [
+        "revolution or orbital revolution",
+        "orbit"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_55",
+      "question": "architectural elements forming rib vaults eg wells cathedral?",
+      "student_answer": "Rib vaults are a key structural feature of Gothic architecture, characterized by intersecting arched ribs that support and distribute the weight of a vaulted ceiling. At Wells Cathedral, the rib vaults are particularly notable for their complex patterns including tierceron and lierne ribs that create elaborate star-like designs in the nave and choir. These elements include diagonal ribs, transverse ribs, wall ribs, and the decorative secondary ribs that form the intricate net-like patterns characteristic of English Gothic vaulting.\n\n<answer>diagonal ribs, transverse ribs, wall ribs, tierceron ribs, lierne ribs</answer>",
+      "extracted_answer": "diagonal ribs, transverse ribs, wall ribs, tierceron ribs, lierne ribs",
+      "ground_truths": [
+        "an armature of piped masonry",
+        "barrel vaults",
+        "two to three barrel vaults"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_56",
+      "question": "who sang the song good morning good morning?",
+      "student_answer": "The song \"Good Morning Good Morning\" was written and performed by The Beatles. It appears on their 1967 album *Sgt. Pepper's Lonely Hearts Club Band*. The track is known for its sound effects and was primarily composed by John Lennon. <answer>The Beatles</answer>",
+      "extracted_answer": "The Beatles",
+      "ground_truths": [
+        "Gene Kelly",
+        "Donald O'Connor",
+        "Judy Garland",
+        "Debbie Reynolds",
+        "Mickey Rooney"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_57",
+      "question": "who wrote papa got a brand new bag?",
+      "student_answer": "\"Papa's Got a Brand New Bag\" was written and performed by James Brown, who is widely credited with creating the song that helped define funk music. The track was released in 1965 and became one of his signature hits. <answer>James Brown</answer>",
+      "extracted_answer": "James Brown",
+      "ground_truths": [
+        "James Brown"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_58",
+      "question": "where does a roadrunner live in the desert?",
+      "student_answer": "Roadrunners are desert-dwelling birds found throughout the southwestern United States and Mexico, primarily inhabiting arid and semi-arid regions with sparse vegetation like scrubland, chaparral, and open country. They prefer areas with scattered brush for cover and perches. <answer>Southwestern U.S. and Mexico deserts</answer>",
+      "extracted_answer": "Southwestern U.S. and Mexico deserts",
+      "ground_truths": [
+        "mountainous shrubland",
+        "arid lowland"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_59",
+      "question": "who wrote it's a long long way to pasadena?",
+      "student_answer": "\"It's a Long, Long Way to Pasadena\" is a song written by American composer and lyricist **Milton Ager**, with lyrics by **Jack Yellen**. The song was published in 1924. <answer>Ager and Yellen</answer>",
+      "extracted_answer": "Ager and Yellen",
+      "ground_truths": [
+        "John Young",
+        "Harry Vanda",
+        "David Hemmings",
+        "George Young"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_60",
+      "question": "what's the dog's name on tom and jerry?",
+      "student_answer": "The dog character in Tom and Jerry is named Spike, though he is sometimes referred to as \"Butch\" or \"Killer\" in early episodes. He is a grey bulldog who often protects Jerry from Tom's schemes. <answer>Spike</answer>",
+      "extracted_answer": "Spike",
+      "ground_truths": [
+        "Spike"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_61",
+      "question": "who are nominated for president of india 2017?",
+      "student_answer": "In the 2017 Indian presidential election, the two main candidates were Ram Nath Kovind, nominated by the ruling NDA coalition, and Meira Kumar, nominated by the opposition. Kovind, a former Bihar Governor, won the election and became the 14th President of India. <answer>Ram Nath Kovind and Meira Kumar</answer>",
+      "extracted_answer": "Ram Nath Kovind and Meira Kumar",
+      "ground_truths": [
+        "Meira Kumar",
+        "Ram Nath Kovind"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_62",
+      "question": "where does the path train stop in newark?",
+      "student_answer": "The PATH train serves three stations in Newark, New Jersey: Newark Penn Station, which is the major transportation hub; Harrison, just across the Passaic River; and Newark Airport Station, which provides a connection to AirTrain Newark for airport terminals. <answer>Newark Penn Station, Harrison, Newark Airport Station</answer>",
+      "extracted_answer": "Newark Penn Station, Harrison, Newark Airport Station",
+      "ground_truths": [
+        "Newark Penn Station"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6
+    },
+    {
+      "id": "nq_validation_63",
+      "question": "where does route 66 start on the west coast?",
+      "student_answer": "Route 66 does not start on the West Coast; its western terminus is in Santa Monica, California, on the Pacific Ocean. The route traditionally ends at the intersection of Olympic Boulevard and Lincoln Boulevard, marked by a \"End of the Trail\" sign. <answer>Santa Monica</answer>",
+      "extracted_answer": "Santa Monica",
+      "ground_truths": [
+        "in Santa Monica"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.8
+    },
+    {
+      "id": "nq_validation_65",
+      "question": "when did houston go to the american league?",
+      "student_answer": "The Houston Astros moved from the National League to the American League in 2013 as part of Major League Baseball's realignment, which created two 15-team leagues and required an interleague game to be played every day. <answer>2013</answer>",
+      "extracted_answer": "2013",
+      "ground_truths": [
+        "2013"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_64",
+      "question": "who is the first wife on sister wives?",
+      "student_answer": "The first wife in the polygamous family featured on the TLC reality series \"Sister Wives\" is Meri Brown. She was the first and only legal wife of Kody Brown for nearly two decades before he spiritually married the other wives. <answer>Meri Brown</answer>",
+      "extracted_answer": "Meri Brown",
+      "ground_truths": [
+        "Meri"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_67",
+      "question": "coldplay song i will try to fix you?",
+      "student_answer": "The song is actually titled \"Fix You\" by Coldplay, not \"I Will Try to Fix You.\" It's a popular track from their 2005 album *X&Y*, known for its emotional lyrics and uplifting melody. <answer>Fix You</answer>",
+      "extracted_answer": "Fix You",
+      "ground_truths": [
+        "\"Fix You\""
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_66",
+      "question": "when did they stop cigarette advertising on television?",
+      "student_answer": "Cigarette advertising on television in the United States was effectively banned by the Public Health Cigarette Smoking Act, which was signed into law on 2 April 1970. The law prohibited cigarette ads on TV and radio, with the ban officially taking effect at 11:59 PM on 1 January 1971. This marked the end of a major advertising era for tobacco companies on broadcast media. <answer>1 January 1971</answer>",
+      "extracted_answer": "1 January 1971",
+      "ground_truths": [
+        "January 2, 1971",
+        "1970"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_68",
+      "question": "points on a sphere or angles in a circle are measured in units called?",
+      "student_answer": "Points on a sphere or angles in a circle are measured in units called degrees or radians. Degrees divide a circle into 360 equal parts, while radians are based on the radius of the circle. <answer>degrees or radians</answer>",
+      "extracted_answer": "degrees or radians",
+      "ground_truths": [
+        "radians"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_69",
+      "question": "the oligodynamic effect is a phenomenon that describes?",
+      "student_answer": "The oligodynamic effect describes the ability of certain metals, particularly heavy metals like silver, copper, and mercury, to exert a toxic effect on microorganisms such as bacteria, algae, and fungi even at very low concentrations. This antimicrobial property is why these metals have been historically used for disinfection and water purification. <answer>the toxic effect of certain metals on microorganisms at low concentrations</answer>",
+      "extracted_answer": "the toxic effect of certain metals on microorganisms at low concentrations",
+      "ground_truths": [
+        "a biocidal effect of metals"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.4285714285714285
+    },
+    {
+      "id": "nq_validation_71",
+      "question": "how many games in a row have the uconn women's basketball team won?",
+      "student_answer": "The UConn women's basketball team's winning streak is an active and historic run. As of the most recent updates, the Huskies have won 23 consecutive games. This streak began after their last loss and has continued through the current season. <answer>23</answer>",
+      "extracted_answer": "23",
+      "ground_truths": [
+        "111 straight wins",
+        "111",
+        "90"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_70",
+      "question": "where does the white witch live in narnia?",
+      "student_answer": "The White Witch, also known as Jadis, lives in a palace in the northern region of Narnia, which she rules as a tyrannical queen. Her stronghold is often described as being made of ice or located in a cold, desolate area, reflecting her association with winter. <answer>a palace in northern Narnia</answer>",
+      "extracted_answer": "a palace in northern Narnia",
+      "ground_truths": [
+        "her castle"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_73",
+      "question": "who sings the theme song for the tv show cops?",
+      "student_answer": "The theme song for the television show *COPS* is \"Bad Boys,\" performed by the reggae group Inner Circle. The song was originally released in 1987 and became widely associated with the show when it premiered in 1989. <answer>Inner Circle</answer>",
+      "extracted_answer": "Inner Circle",
+      "ground_truths": [
+        "Inner Circle",
+        "Jamaican reggae band Inner Circle"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_72",
+      "question": "is there a name for the at symbol?",
+      "student_answer": "Yes, the \"@\" symbol has several names depending on context and region. It's most commonly called the \"at sign\" or \"commercial at,\" but it's also informally known as the \"at symbol.\" In different languages and cultures, it has creative nicknames like \"snail\" (French, Italian), \"monkey tail\" (Dutch), and \"little dog\" (Russian). <answer>at sign</answer>",
+      "extracted_answer": "at sign",
+      "ground_truths": [
+        "commercial at",
+        "at symbol",
+        "at sign"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_75",
+      "question": "who plays captain phasma in star wars the force awakens?",
+      "student_answer": "Captain Phasma in *Star Wars: The Force Awakens* is played by actress Gwendoline Christie, who performed the role both in costume and through voice work. <answer>Christie</answer>",
+      "extracted_answer": "Christie",
+      "ground_truths": [
+        "Gwendoline Christie"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_76",
+      "question": "who sings she's like the wind lyrics?",
+      "student_answer": "\"She's Like the Wind\" was performed by Patrick Swayze, who co-wrote the song with Stacy Widelitz. It was featured on the soundtrack for the 1987 film *Dirty Dancing*, in which Swayze starred. <answer>Patrick Swayze</answer>",
+      "extracted_answer": "Patrick Swayze",
+      "ground_truths": [
+        "Wendy Fraser",
+        "Patrick Swayze"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_74",
+      "question": "when was corporal punishment banned in south africa?",
+      "student_answer": "Corporal punishment in South Africa was officially banned in all schools through the South African Schools Act of 1996, which came into effect in 1997. This legislation made it illegal for educators to administer corporal punishment to students. The ban was later reinforced by a 2000 Constitutional Court ruling that declared corporal punishment in schools unconstitutional.\n\n<answer>1997</answer>",
+      "extracted_answer": "1997",
+      "ground_truths": [
+        "1997"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_77",
+      "question": "when did marathon change its name to snickers?",
+      "student_answer": "Marathon was a chocolate bar produced by Mars, Inc. that was renamed to Snickers in the United Kingdom and Ireland in 1990 to align with the global brand name. The change was part of a worldwide brand standardization effort, though the bar had been sold as Snickers in most other markets, including the United States, since its introduction in 1930. <answer>1990</answer>",
+      "extracted_answer": "1990",
+      "ground_truths": [
+        "19 July 1990"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_78",
+      "question": "who captained the first european ship to sail around the tip of africa?",
+      "student_answer": "The first European ship to sail around the southern tip of Africa was captained by Portuguese explorer Bartolomeu Dias in 1488. His expedition successfully rounded the Cape of Good Hope, opening the sea route from Europe to Asia. <answer>Bartolomeu Dias</answer>",
+      "extracted_answer": "Bartolomeu Dias",
+      "ground_truths": [
+        "Bartolomeu Dias"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_80",
+      "question": "who sang let me tell you about the birds and the bees?",
+      "student_answer": "The song \"Let Me Tell You About the Birds and the Bees\" was originally recorded by Jewel Akens in 1964. It became his biggest hit, reaching number 3 on the Billboard Hot 100 chart. <answer>Jewel Akens</answer>",
+      "extracted_answer": "Jewel Akens",
+      "ground_truths": [
+        "Jewel Akens"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_79",
+      "question": "who ordered the forbidden city to be built?",
+      "student_answer": "The Forbidden City in Beijing was ordered to be built by the Yongle Emperor of the Ming Dynasty, Zhu Di, who initiated its construction in 1406. It served as the imperial palace for Chinese emperors for nearly 500 years. <answer>Yongle Emperor</answer>",
+      "extracted_answer": "Yongle Emperor",
+      "ground_truths": [
+        "Zhu Di"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_81",
+      "question": "who has the power to approve or veto legislation constitution?",
+      "student_answer": "The power to approve or veto legislation in the United States is vested in the President, as established by Article I, Section 7 of the U.S. Constitution. This executive check on the legislative branch allows the President to sign bills into law or reject them, though Congress can override a veto with a two-thirds majority vote in both houses. <answer>the President</answer>",
+      "extracted_answer": "the President",
+      "ground_truths": [
+        "the President"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_83",
+      "question": "who is the minister of local government in zimbabwe?",
+      "student_answer": "The Minister of Local Government and Public Works in Zimbabwe is Winston Chitando. He was appointed to this position in September 2023, having previously served as the Minister of Mines and Mining Development. <answer>Winston Chitando</answer>",
+      "extracted_answer": "Winston Chitando",
+      "ground_truths": [
+        "Hon July Moyo"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_82",
+      "question": "how many seasons of the rugrats are there?",
+      "student_answer": "The original *Rugrats* series ran for 9 seasons from 1991 to 2004, with a revival series titled *Rugrats (2021)* adding 3 more seasons, bringing the total number of seasons to 12. <answer>12</answer>",
+      "extracted_answer": "12",
+      "ground_truths": [
+        "9 seasons",
+        "9"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_84",
+      "question": "what was the initial effect of the transition from command to market economies in eastern europe?",
+      "student_answer": "The initial effect of the transition from command to market economies in Eastern Europe in the early 1990s was a severe economic contraction, characterized by sharp declines in GDP, hyperinflation, and rising unemployment, as state-owned industries collapsed and price controls were lifted. This period, often called \"transition recession,\" caused significant social hardship and a drop in living standards before stabilization and growth began in most countries later in the decade. <answer>severe economic recession with declining GDP, hyperinflation, and rising unemployment</answer>",
+      "extracted_answer": "severe economic recession with declining GDP, hyperinflation, and rising unemployment",
+      "ground_truths": [
+        "Inequality of opportunity"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_87",
+      "question": "who plays the saint of killers on preacher?",
+      "student_answer": "The Saint of Killers on the television series *Preacher* is portrayed by Scottish actor Graham McTavish. He appears in this role throughout the show's four-season run on AMC. <answer>McTavish</answer>",
+      "extracted_answer": "McTavish",
+      "ground_truths": [
+        "Graham McTavish"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_86",
+      "question": "how many pieces in a terry's chocolate orange?",
+      "student_answer": "A Terry's Chocolate Orange typically contains 20 triangular segments that can be broken apart from the orange-shaped ball of chocolate. This design allows it to be \"tapped and unwrapped\" to separate the pieces. <answer>20 pieces</answer>",
+      "extracted_answer": "20 pieces",
+      "ground_truths": [
+        "six",
+        "20"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_85",
+      "question": "when did toyota start making cars in the us?",
+      "student_answer": "Toyota began manufacturing vehicles in the United States in November 1986, when the first Toyota Camry rolled off the production line at the New United Motor Manufacturing, Inc. (NUMMI) joint venture plant in Fremont, California. This was followed by the opening of Toyota's first wholly-owned U.S. assembly plant in Georgetown, Kentucky, in 1988. <answer>November 1986</answer>",
+      "extracted_answer": "November 1986",
+      "ground_truths": [
+        "by the early 1980s",
+        "1984"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_89",
+      "question": "who is playing the halftime show at super bowl 2016?",
+      "student_answer": "The halftime show at Super Bowl 50 in 2016 was performed by the British rock band Coldplay, with special guest appearances from Beyoncé and Bruno Mars. The show featured a medley of hits from all three artists and a theme of togetherness. <answer>Coldplay, with Beyoncé and Bruno Mars</answer>",
+      "extracted_answer": "Coldplay, with Beyoncé and Bruno Mars",
+      "ground_truths": [
+        "Beyoncé",
+        "Coldplay",
+        "Bruno Mars"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_90",
+      "question": "jonny cash one piece at a time car?",
+      "student_answer": "Johnny Cash's song \"One Piece at a Time\" humorously tells the story of an auto worker who slowly steals parts over decades to build a car, resulting in a mismatched, fictional Cadillac model from various years. The song was a hit single in 1976. <answer>a mismatched Cadillac built from stolen parts</answer>",
+      "extracted_answer": "a mismatched Cadillac built from stolen parts",
+      "ground_truths": [
+        "Cadillac"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.2857142857142857
+    },
+    {
+      "id": "nq_validation_91",
+      "question": "what is the minimum wage in france per hour?",
+      "student_answer": "The minimum wage in France, known as the SMIC (Salaire Minimum Interprofessionnel de Croissance), is €11.65 per hour before taxes as of January 1, 2024. This rate is adjusted annually based on inflation and economic conditions. <answer>€11.65 per hour</answer>",
+      "extracted_answer": "€11.65 per hour",
+      "ground_truths": [
+        "11.16",
+        "€9.88 per hour."
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_88",
+      "question": "when did the royal proclamation of 1763 end?",
+      "student_answer": "The Royal Proclamation of 1763 was not formally \"ended\" by a single event but was gradually superseded and violated by subsequent treaties and colonial expansion, most notably by the Treaty of Fort Stanwix in 1768 and the Quebec Act of 1774, which nullified its core provisions regarding western lands. Its restrictions were largely ignored by American settlers, contributing to tensions leading to the American Revolution. <answer>Superseded by treaties like the 1768 Treaty of Fort Stanwix and the 1774 Quebec Act</answer>",
+      "extracted_answer": "Superseded by treaties like the 1768 Treaty of Fort Stanwix and the 1774 Quebec Act",
+      "ground_truths": [
+        "the American Revolutionary War",
+        "with the American Revolutionary War",
+        "1783"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    },
+    {
+      "id": "nq_validation_93",
+      "question": "when did amnesia the dark descent come out?",
+      "student_answer": "Amnesia: The Dark Descent was released on September 8, 2010, for Windows, Mac, and Linux. It is a first-person survival horror game developed by Frictional Games. <answer>8 September 2010</answer>",
+      "extracted_answer": "8 September 2010",
+      "ground_truths": [
+        "8 September 2010"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_94",
+      "question": "what is the oldest street in the philippines?",
+      "student_answer": "The oldest street in the Philippines is Calle Colon in Cebu City, established by Spanish conquistador Miguel López de Legazpi in 1565. It was the first formal street laid out during the Spanish colonial period and remains a historic thoroughfare today. <answer>Calle Colon</answer>",
+      "extracted_answer": "Calle Colon",
+      "ground_truths": [
+        "Cebu City",
+        "Colon Street"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.5
+    },
+    {
+      "id": "nq_validation_92",
+      "question": "describe the three phases of the normal blood clotting process?",
+      "student_answer": "The normal blood clotting process, or hemostasis, occurs in three sequential phases: first, vascular spasm where blood vessels constrict to reduce blood flow; second, platelet plug formation where platelets adhere to the site and aggregate to form a temporary seal; and third, coagulation where a complex cascade of clotting factors leads to the formation of a fibrin mesh that stabilizes the plug into a durable clot. <answer>vascular spasm, platelet plug formation, coagulation</answer>",
+      "extracted_answer": "vascular spasm, platelet plug formation, coagulation",
+      "ground_truths": [
+        "blood coagulation",
+        "vasoconstriction,"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.25
+    },
+    {
+      "id": "nq_validation_95",
+      "question": "where is the tibia and fibula bone located?",
+      "student_answer": "The tibia and fibula are the two bones located in the lower leg, between the knee and the ankle. The larger tibia (shinbone) is on the inner side and bears most of the body's weight, while the thinner fibula runs parallel on the outer side, primarily providing muscle attachment and stability. Together, they form the skeletal structure of the lower leg.\n\n<answer>lower leg</answer>",
+      "extracted_answer": "lower leg",
+      "ground_truths": [
+        "leg"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_96",
+      "question": "who played bat masterson in the tv series?",
+      "student_answer": "The role of Bat Masterson in the television series was played by actor Gene Barry. The show, titled *Bat Masterson*, aired from 1958 to 1961 and was based on the real-life lawman and gambler of the American Old West. <answer>Gene Barry</answer>",
+      "extracted_answer": "Gene Barry",
+      "ground_truths": [
+        "Gene Barry"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_97",
+      "question": "who sings sugar sugar you are my candy girl?",
+      "student_answer": "\"Sugar, Sugar\" was performed by The Archies, a fictional band from the Archie Comics universe. The song was actually recorded by studio musicians, with lead vocals by Ron Dante. It became a massive hit in 1969, reaching number one on the Billboard Hot 100. <answer>The Archies</answer>",
+      "extracted_answer": "The Archies",
+      "ground_truths": [
+        "the Archies"
+      ],
+      "exact_match": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "id": "nq_validation_99",
+      "question": "who plays noah newman on the young and the restless?",
+      "student_answer": "The character of Noah Newman on *The Young and the Restless* has been portrayed by several actors, but the most recent and longest-running portrayal is by actor Robert Adamson. He first took over the role in 2013 and has played the character consistently since then. <answer>Robert Adamson</answer>",
+      "extracted_answer": "Robert Adamson",
+      "ground_truths": [
+        "Robert Gillespie Adamson IV"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.6666666666666666
+    },
+    {
+      "id": "nq_validation_98",
+      "question": "types of skiing in the winter olympics 2018?",
+      "student_answer": "The 2018 Winter Olympics in PyeongChang featured six distinct skiing disciplines: Alpine Skiing, Cross-Country Skiing, Ski Jumping, Nordic Combined, Freestyle Skiing, and Snowboarding. Each discipline contains multiple events, such as downhill, slalom, moguls, and halfpipe. <answer>Alpine, Cross-Country, Ski Jumping, Nordic Combined, Freestyle, Snowboarding</answer>",
+      "extracted_answer": "Alpine, Cross-Country, Ski Jumping, Nordic Combined, Freestyle, Snowboarding",
+      "ground_truths": [
+        "Slalom",
+        "Downhill",
+        "Super-G",
+        "Giant slalom",
+        "Slalom – (SC)"
+      ],
+      "exact_match": 0.0,
+      "f1_score": 0.0
+    }
+  ]
+}
