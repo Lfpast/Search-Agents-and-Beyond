@@ -79,7 +79,7 @@ class SearchAgent:
         
     def solve(self, question: str) -> Dict[str, Any]:
         """
-        Answer a question using multi-step reasoning and search.
+        Answer a question using multi-step reasoning and multiple tools.
         """
         system_prompt = self._get_system_prompt()
         messages = [

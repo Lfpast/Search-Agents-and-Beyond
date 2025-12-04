@@ -23,21 +23,21 @@ run_setting() {
     echo "============================================================"
 
     # 1. Generate Predictions
-    # echo "Generating predictions..."
+    echo "Generating predictions..."
     
-    # python scripts/generate_predictions.py \
-    #     --data_path "$DATA_PATH" \
-    #     --output_prediction_path "$PRED_FILE" \
-    #     --output_trajectory_path "$TRAJ_FILE" \
-    #     --setting "$SETTING" \
-    #     --model "$MODEL" \
-    #     --max_workers "$MAX_WORKERS"
+    python scripts/generate_predictions.py \
+        --data_path "$DATA_PATH" \
+        --output_prediction_path "$PRED_FILE" \
+        --output_trajectory_path "$TRAJ_FILE" \
+        --setting "$SETTING" \
+        --model "$MODEL" \
+        --max_workers "$MAX_WORKERS"
 
     # 2. Evaluate with Exact Match
-    # echo "Evaluating with Exact Match..."
-    # python scripts/grade_with_em.py \
-    #     --input "$PRED_FILE" \
-    #     --output "$SCORE_EM_FILE"
+    echo "Evaluating with Exact Match..."
+    python scripts/grade_with_em.py \
+        --input "$PRED_FILE" \
+        --output "$SCORE_EM_FILE"
 
     # 3. Evaluate with LLM Judge
     # Note: Requires OPENAI_API_KEY or DeepSeek-API in .env
@@ -59,8 +59,8 @@ run_setting() {
 }
 
 # Run for both settings
-# run_setting "nosearch"
-# run_setting "search"
+run_setting "nosearch"
+run_setting "search"
 run_setting "browsing"
 
 echo "All experiments completed."

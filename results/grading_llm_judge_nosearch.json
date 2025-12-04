@@ -1,0 +1,1169 @@
+{
+  "accuracy": 0.76,
+  "correct_count": 76,
+  "total_count": 100,
+  "model_used": "deepseek-chat",
+  "detailed_results": [
+    {
+      "id": "nq_validation_2",
+      "question": "how many seasons of the bastard executioner are there?",
+      "student_answer": "The Bastard Executioner had only one season before it was canceled. The show aired in 2015 on FX. <answer>one season</answer>",
+      "ground_truths": [
+        "one",
+        "one season"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"one season\" which matches one of the ground truth answers verbatim. The additional context provided does not contradict the core factual information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"one season\" which matches one of the ground truth answers verbatim. The additional context provided does not contradict the core factual information."
+    },
+    {
+      "id": "nq_validation_4",
+      "question": "who won last year's ncaa women's basketball?",
+      "student_answer": "South Carolina won last year's NCAA women's basketball championship, defeating Iowa in the national title game. The Gamecocks completed a perfect 38-0 season under coach Dawn Staley. <answer>South Carolina</answer>",
+      "ground_truths": [
+        "South Carolina"
+      ],
+      "correct": true,
+      "explanation": "The student answer clearly states \"South Carolina\" as the winner, which matches the ground truth answer. The additional details provided (defeating Iowa, perfect season, coach) are factual and do not contradict the core information.",
+      "raw_judge_response": "CORRECT: The student answer clearly states \"South Carolina\" as the winner, which matches the ground truth answer. The additional details provided (defeating Iowa, perfect season, coach) are factual and do not contradict the core information."
+    },
+    {
+      "id": "nq_validation_7",
+      "question": "who was the ruler of england in 1616?",
+      "student_answer": "In 1616, England was ruled by James I, who had been king since 1603 following the death of Queen Elizabeth I. He was the first monarch to rule both England and Scotland in what was known as the Union of the Crowns. <answer>James I</answer>",
+      "ground_truths": [
+        "James I"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies James I as the ruler of England in 1616, which matches the ground truth. The additional context provided is factually accurate and does not contradict the core information.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies James I as the ruler of England in 1616, which matches the ground truth. The additional context provided is factually accurate and does not contradict the core information."
+    },
+    {
+      "id": "nq_validation_3",
+      "question": "when did the eagles win last super bowl?",
+      "student_answer": "The Philadelphia Eagles won their most recent Super Bowl on February 4, 2018, when they defeated the New England Patriots in Super Bowl LII. This victory marked the franchise's first-ever Super Bowl win. <answer>4 February 2018</answer>",
+      "ground_truths": [
+        "2017"
+      ],
+      "correct": true,
+      "explanation": "The student answer provides the specific date \"February 4, 2018,\" which is the calendar date of the Super Bowl that concluded the 2017 NFL season. This is semantically equivalent to the ground truth answer \"2017,\" as both correctly identify the championship season.",
+      "raw_judge_response": "CORRECT: The student answer provides the specific date \"February 4, 2018,\" which is the calendar date of the Super Bowl that concluded the 2017 NFL season. This is semantically equivalent to the ground truth answer \"2017,\" as both correctly identify the championship season."
+    },
+    {
+      "id": "nq_validation_1",
+      "question": "who wrote he ain't heavy he's my brother lyrics?",
+      "student_answer": "The lyrics for \"He Ain't Heavy, He's My Brother\" were written by American songwriter Bobby Scott and British lyricist Bob Russell. The song was first recorded by The Hollies in 1969 and became one of their signature hits. <answer>Bobby Scott and Bob Russell</answer>",
+      "ground_truths": [
+        "Bobby Scott",
+        "Bob Russell"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies both Bobby Scott and Bob Russell as the writers, which matches the ground truth options of \"Bobby Scott\" OR \"Bob Russell\".",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies both Bobby Scott and Bob Russell as the writers, which matches the ground truth options of \"Bobby Scott\" OR \"Bob Russell\"."
+    },
+    {
+      "id": "nq_validation_0",
+      "question": "when was the last time anyone was on the moon?",
+      "student_answer": "The last time humans were on the Moon was during NASA's Apollo 17 mission in December 1972. Astronauts Eugene Cernan and Harrison Schmitt spent about three days on the lunar surface conducting experiments and exploration. No human has returned to the Moon since that mission. <answer>December 1972</answer>",
+      "ground_truths": [
+        "14 December 1972 UTC",
+        "December 1972"
+      ],
+      "correct": true,
+      "explanation": "The student answer provides the specific month and year (December 1972) which is semantically equivalent to the ground truth answer \"December 1972\". The additional context about the Apollo 17 mission and astronauts does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer provides the specific month and year (December 1972) which is semantically equivalent to the ground truth answer \"December 1972\". The additional context about the Apollo 17 mission and astronauts does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_6",
+      "question": "love yourself by justin bieber is about who?",
+      "student_answer": "\"Love Yourself\" by Justin Bieber is about a past relationship with a self-centered and manipulative person, widely believed to be inspired by his ex-girlfriend Selena Gomez. The song's lyrics express frustration and the realization that the narrator is better off without the toxic partner. <answer>a past girlfriend</answer>",
+      "ground_truths": [
+        "Rihanna"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer is \"Rihanna\", while the student's answer states \"a past girlfriend\" and specifically names Selena Gomez. These are different people and therefore contain conflicting factual information.",
+      "raw_judge_response": "INCORRECT: The ground truth answer is \"Rihanna\", while the student's answer states \"a past girlfriend\" and specifically names Selena Gomez. These are different people and therefore contain conflicting factual information."
+    },
+    {
+      "id": "nq_validation_5",
+      "question": "when did the isle of wight become an island?",
+      "student_answer": "The Isle of Wight became separated from mainland Britain around 7,000 years ago at the end of the last Ice Age, when rising sea levels flooded the river valleys that connected it to the English mainland. This geological process created the Solent, the body of water that now separates the island from Hampshire. <answer>around 7,000 years ago</answer>",
+      "ground_truths": [
+        "During the last Ice Age"
+      ],
+      "correct": true,
+      "explanation": "The student's answer \"around 7,000 years ago\" is a more specific timeframe for the event described in the ground truth \"During the last Ice Age,\" as the end of the last Ice Age and the associated sea level rise occurred approximately 7,000-8,000 years ago. The answers are semantically equivalent.",
+      "raw_judge_response": "CORRECT: The student's answer \"around 7,000 years ago\" is a more specific timeframe for the event described in the ground truth \"During the last Ice Age,\" as the end of the last Ice Age and the associated sea level rise occurred approximately 7,000-8,000 years ago. The answers are semantically equivalent."
+    },
+    {
+      "id": "nq_validation_10",
+      "question": "which state is located in the centre of india?",
+      "student_answer": "Madhya Pradesh is the state located in the geographical center of India, often referred to as the \"Heart of India.\" It is the second-largest state by area and is bordered by several other states. <answer>Madhya Pradesh</answer>",
+      "ground_truths": [
+        "Chhattisgarh",
+        "Madhya Pradesh"
+      ],
+      "correct": true,
+      "explanation": "The student's answer \"Madhya Pradesh\" matches one of the acceptable ground truth answers.",
+      "raw_judge_response": "CORRECT: The student's answer \"Madhya Pradesh\" matches one of the acceptable ground truth answers."
+    },
+    {
+      "id": "nq_validation_13",
+      "question": "who was the actor that played ben stone on law and order?",
+      "student_answer": "Ben Stone was played by actor Michael Moriarty, who portrayed the character from the show's debut in 1990 until his departure in 1994. <answer>Moriarty</answer>",
+      "ground_truths": [
+        "Michael Moriarty"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Michael Moriarty as the actor who played Ben Stone, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Michael Moriarty as the actor who played Ben Stone, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_11",
+      "question": "who sang i ran all the way home?",
+      "student_answer": "\"I Ran All the Way Home\" was performed by the American doo-wop group The Impalas in 1959. The song was their biggest hit, reaching number 2 on the Billboard R&B chart. <answer>The Impalas</answer>",
+      "ground_truths": [
+        "The Impalas"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"The Impalas\" as the performers of the song, which matches the ground truth answer. The additional context provided (e.g., the year, chart performance) is factual and does not contradict the core information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"The Impalas\" as the performers of the song, which matches the ground truth answer. The additional context provided (e.g., the year, chart performance) is factual and does not contradict the core information."
+    },
+    {
+      "id": "nq_validation_9",
+      "question": "what is the maximum data rate for the 802.11a standard select one?",
+      "student_answer": "The 802.11a Wi-Fi standard operates in the 5 GHz frequency band and has a maximum theoretical data rate of 54 Mbps under ideal conditions. This standard was one of the first to use Orthogonal Frequency Division Multiplexing (OFDM) to achieve higher data rates and reduce interference. <answer>54 Mbps</answer>",
+      "ground_truths": [
+        "54 Mbit/s"
+      ],
+      "correct": true,
+      "explanation": "The student's answer of \"54 Mbps\" is semantically equivalent to the ground truth answer of \"54 Mbit/s\", as both units represent megabits per second and the numerical value is identical.",
+      "raw_judge_response": "CORRECT: The student's answer of \"54 Mbps\" is semantically equivalent to the ground truth answer of \"54 Mbit/s\", as both units represent megabits per second and the numerical value is identical."
+    },
+    {
+      "id": "nq_validation_8",
+      "question": "what is the hot coffee mod in san andreas?",
+      "student_answer": "The Hot Coffee mod in Grand Theft Auto: San Andreas was an unofficial modification that unlocked a previously disabled and controversial mini-game involving sexual content. This hidden content was discovered in the game's code and could be accessed via the mod, leading to significant controversy and an Adults Only rating from the ESRB before Rockstar Games patched it out. <answer>Unlocked a hidden sexual mini-game</answer>",
+      "ground_truths": [
+        "a normally inaccessible mini-game"
+      ],
+      "correct": true,
+      "explanation": "The student answer accurately states that the mod \"unlocked a hidden sexual mini-game,\" which is semantically equivalent to the ground truth answer \"a normally inaccessible mini-game.\" Both describe the core function of the mod.",
+      "raw_judge_response": "CORRECT: The student answer accurately states that the mod \"unlocked a hidden sexual mini-game,\" which is semantically equivalent to the ground truth answer \"a normally inaccessible mini-game.\" Both describe the core function of the mod."
+    },
+    {
+      "id": "nq_validation_14",
+      "question": "who does the voice of nala in the lion king?",
+      "student_answer": "Nala is voiced by two different actresses in The Lion King - Moira Kelly provides the adult Nala's voice, while Niketa Calame voices young Nala in the original 1994 animated film. <answer>Kelly</answer>",
+      "ground_truths": [
+        "Niketa Calame",
+        "Sally Dworsky",
+        "Moira Kelly",
+        "Laura Williams"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Moira Kelly as one of the actresses who voiced Nala, which matches one of the provided ground truth answers.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Moira Kelly as one of the actresses who voiced Nala, which matches one of the provided ground truth answers."
+    },
+    {
+      "id": "nq_validation_15",
+      "question": "who plays gram on the young and the restless?",
+      "student_answer": "The character of Gram on The Young and the Restless is played by actress Beth Maitland. She originated the role in 1982 and has portrayed the character for over four decades, making her one of the longest-running cast members on the show. <answer>Maitland</answer>",
+      "ground_truths": [
+        "Max Shippee"
+      ],
+      "correct": false,
+      "explanation": "The student answer states the character is played by Beth Maitland, but the ground truth answer is Max Shippee. This is a direct factual contradiction.",
+      "raw_judge_response": "INCORRECT: The student answer states the character is played by Beth Maitland, but the ground truth answer is Max Shippee. This is a direct factual contradiction."
+    },
+    {
+      "id": "nq_validation_12",
+      "question": "where did the last name wallace come from?",
+      "student_answer": "The surname Wallace is of Scottish origin, derived from the Anglo-Norman French term \"waleis,\" meaning \"Welshman\" or \"foreigner.\" It was used to describe someone from Wales or a person of Welsh descent living in Scotland or northern England. The name became famous through William Wallace, the 13th-century Scottish knight who led resistance against English rule. <answer>Scotland</answer>",
+      "ground_truths": [
+        "a Scottish surname"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies the surname as being of Scottish origin, which matches the ground truth answer \"a Scottish surname.\" The additional historical and etymological context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies the surname as being of Scottish origin, which matches the ground truth answer \"a Scottish surname.\" The additional historical and etymological context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_18",
+      "question": "who had a baby at 100 in the bible?",
+      "student_answer": "There is no biblical account of anyone having a baby at the age of 100. While Abraham was 100 years old when his son Isaac was born, his wife Sarah was 90, not 100. <answer>No one</answer>",
+      "ground_truths": [
+        "Sarah",
+        "Abraham"
+      ],
+      "correct": false,
+      "explanation": "The ground truth states that Sarah or Abraham had a baby when Abraham was 100. The student's answer of \"No one\" is factually incorrect and contradicts the ground truth.",
+      "raw_judge_response": "INCORRECT: The ground truth states that Sarah or Abraham had a baby when Abraham was 100. The student's answer of \"No one\" is factually incorrect and contradicts the ground truth."
+    },
+    {
+      "id": "nq_validation_21",
+      "question": "where was percy jackson and the olympians filmed?",
+      "student_answer": "The series was primarily filmed in Vancouver, Canada, with additional filming locations in Montreal and Los Angeles. The production utilized various studios and outdoor locations in British Columbia to bring the mythological world to life. <answer>Vancouver</answer>",
+      "ground_truths": [
+        "Vancouver",
+        "Mission, British Columbia"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Vancouver\" as the primary filming location, which matches one of the ground truth answers. The additional details provided do not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Vancouver\" as the primary filming location, which matches one of the ground truth answers. The additional details provided do not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_20",
+      "question": "ethiopia flight 961 crashes in to the sea?",
+      "student_answer": "Ethiopian Airlines Flight 961 crashed into the Indian Ocean near the Comoros Islands on 23 November 1996 after being hijacked and running out of fuel. The crash resulted in 125 fatalities, with only 50 survivors. <answer>23 November 1996</answer>",
+      "ground_truths": [
+        "23 November 1996"
+      ],
+      "correct": true,
+      "explanation": "The student's answer contains the exact date \"23 November 1996\" as specified in the ground truth answer.",
+      "raw_judge_response": "CORRECT: The student's answer contains the exact date \"23 November 1996\" as specified in the ground truth answer."
+    },
+    {
+      "id": "nq_validation_16",
+      "question": "what is the oath that new citizens take?",
+      "student_answer": "New citizens take the Oath of Allegiance, which is a formal declaration of loyalty to the United States and includes promises to support and defend the Constitution and laws, renounce allegiance to foreign powers, and bear arms or perform noncombatant service when required. <answer>Oath of Allegiance</answer>",
+      "ground_truths": [
+        "United States Oath of Allegiance"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies the oath as the \"Oath of Allegiance,\" which is the common name for the \"United States Oath of Allegiance\" provided in the ground truth. The additional details in the student's answer are factual elaborations on the oath's content and do not contradict the core information.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies the oath as the \"Oath of Allegiance,\" which is the common name for the \"United States Oath of Allegiance\" provided in the ground truth. The additional details in the student's answer are factual elaborations on the oath's content and do not contradict the core information."
+    },
+    {
+      "id": "nq_validation_19",
+      "question": "what age do you need to be to buy a bb gun?",
+      "student_answer": "The minimum age to purchase a BB gun varies by location, but in the United States, federal law requires buyers to be at least 18 years old. Some states and local jurisdictions may have stricter regulations, setting the minimum age higher or requiring additional safety measures. <answer>18</answer>",
+      "ground_truths": [
+        "18"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"18\" as the minimum age, which matches the ground truth answer. The additional context about varying local laws does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"18\" as the minimum age, which matches the ground truth answer. The additional context about varying local laws does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_22",
+      "question": "how many seasons of vampire diaries r there?",
+      "student_answer": "The Vampire Diaries ran for eight seasons from 2009 to 2017 on The CW, following the supernatural lives of characters in the fictional town of Mystic Falls. <answer>8</answer>",
+      "ground_truths": [
+        "eight",
+        "8"
+      ],
+      "correct": true,
+      "explanation": "The student's answer clearly states \"eight\" and encloses the number \"8\" in an answer tag, which directly matches the ground truth answers \"eight\" OR \"8\".",
+      "raw_judge_response": "CORRECT: The student's answer clearly states \"eight\" and encloses the number \"8\" in an answer tag, which directly matches the ground truth answers \"eight\" OR \"8\"."
+    },
+    {
+      "id": "nq_validation_17",
+      "question": "who is under the mask of darth vader?",
+      "student_answer": "Darth Vader's true identity is Anakin Skywalker, a Jedi Knight who turned to the dark side of the Force and became a Sith Lord. He is revealed to be Luke Skywalker's father in *Star Wars: Episode V - The Empire Strikes Back*. <answer>Anakin Skywalker</answer>",
+      "ground_truths": [
+        "Anakin Skywalker"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Anakin Skywalker\" as the true identity, which matches the ground truth answer exactly. The additional context provided is factually accurate and does not contradict the core information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Anakin Skywalker\" as the true identity, which matches the ground truth answer exactly. The additional context provided is factually accurate and does not contradict the core information."
+    },
+    {
+      "id": "nq_validation_23",
+      "question": "how many episodes are there in dragon ball z?",
+      "student_answer": "Dragon Ball Z consists of 291 episodes total, which originally aired in Japan from April 1989 to January 1996. This makes it the longest-running series in the main Dragon Ball anime franchise. <answer>291</answer>",
+      "ground_truths": [
+        "291 episodes",
+        "291"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"291 episodes\" and encloses the number 291 in an answer tag, which matches the ground truth answer of \"291 episodes\" or \"291\".",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"291 episodes\" and encloses the number 291 in an answer tag, which matches the ground truth answer of \"291 episodes\" or \"291\"."
+    },
+    {
+      "id": "nq_validation_28",
+      "question": "who plays joker in batman the dark knight?",
+      "student_answer": "The Joker in The Dark Knight was portrayed by Heath Ledger, whose performance earned him a posthumous Academy Award for Best Supporting Actor. <answer>Ledger</answer>",
+      "ground_truths": [
+        "Ledger"
+      ],
+      "correct": true,
+      "explanation": "The student answer clearly identifies Heath Ledger as the actor and provides the correct last name \"Ledger\" in the answer tag, which matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student answer clearly identifies Heath Ledger as the actor and provides the correct last name \"Ledger\" in the answer tag, which matches the ground truth."
+    },
+    {
+      "id": "nq_validation_26",
+      "question": "who plays matthew on anne with an e?",
+      "student_answer": "The character of Matthew Cuthbert in Anne with an E is played by Irish-Canadian actor R.H. Thomson. He portrays the kind, quiet farmer who, along with his sister Marilla, adopts the orphan Anne Shirley. <answer>R.H. Thomson</answer>",
+      "ground_truths": [
+        "R. H. Thomson"
+      ],
+      "correct": true,
+      "explanation": "The student's answer provides the correct actor, R.H. Thomson, which is a minor formatting variation of the ground truth answer \"R. H. Thomson\". The additional context provided does not contradict the factual core of the answer.",
+      "raw_judge_response": "CORRECT: The student's answer provides the correct actor, R.H. Thomson, which is a minor formatting variation of the ground truth answer \"R. H. Thomson\". The additional context provided does not contradict the factual core of the answer."
+    },
+    {
+      "id": "nq_validation_24",
+      "question": "who plays auggie in the movie the wonder?",
+      "student_answer": "In the 2022 film *The Wonder*, the character of Auggie is played by actor Kíla Lord Cassidy. She is the daughter of director Sebastián Lelio and actress Elaine Cassidy, who also appears in the film. <answer>Kíla Lord Cassidy</answer>",
+      "ground_truths": [
+        "Jacob Tremblay"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer is Jacob Tremblay, while the student answer states Kíla Lord Cassidy. These are two different actors, so the information is factually wrong.",
+      "raw_judge_response": "INCORRECT: The ground truth answer is Jacob Tremblay, while the student answer states Kíla Lord Cassidy. These are two different actors, so the information is factually wrong."
+    },
+    {
+      "id": "nq_validation_25",
+      "question": "when was the first australian prime minister elected?",
+      "student_answer": "The first Australian Prime Minister was Edmund Barton, who was appointed to the position on 1 January 1901 following the federation of the Australian colonies. This appointment occurred before the first federal election was held, so he was not popularly elected to the role initially. <answer>1 January 1901</answer>",
+      "ground_truths": [
+        "Sir Edmund Barton",
+        "1901"
+      ],
+      "correct": true,
+      "explanation": "The student's answer provides the correct year (1901) and the correct name (Edmund Barton), which matches the information in the ground truth answers. The additional context about the appointment date and method does not contradict the core facts being evaluated.",
+      "raw_judge_response": "CORRECT: The student's answer provides the correct year (1901) and the correct name (Edmund Barton), which matches the information in the ground truth answers. The additional context about the appointment date and method does not contradict the core facts being evaluated."
+    },
+    {
+      "id": "nq_validation_30",
+      "question": "when was the first hunger games book published?",
+      "student_answer": "The first Hunger Games book was published on September 14, 2008, by Scholastic. It was written by Suzanne Collins and became the first novel in a trilogy that would later be adapted into a successful film series. <answer>14 September 2008</answer>",
+      "ground_truths": [
+        "September 14, 2008",
+        "2008"
+      ],
+      "correct": true,
+      "explanation": "The student's answer provides the exact date \"14 September 2008\", which is a valid formatting of the ground truth answer \"September 14, 2008\". The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer provides the exact date \"14 September 2008\", which is a valid formatting of the ground truth answer \"September 14, 2008\". The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_27",
+      "question": "who is the girl in green day 21 guns?",
+      "student_answer": "The girl in Green Day's \"21 Guns\" music video is actress and model Lisa Stelly, who portrays the female lead in the narrative-driven video that explores themes of love and conflict. She appears alongside Green Day frontman Billie Joe Armstrong in the dramatic storyline. <answer>Lisa Stelly</answer>",
+      "ground_truths": [
+        "Lisa Stelly"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Lisa Stelly as the girl in the music video, which matches the ground truth. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Lisa Stelly as the girl in the music video, which matches the ground truth. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_29",
+      "question": "when was the south asian association for regional co-operation (saarc) formed?",
+      "student_answer": "The South Asian Association for Regional Co-operation (SAARC) was officially established on 8 December 1985, following the signing of its charter by the seven founding member states in Dhaka, Bangladesh. This intergovernmental organization was created to promote economic and regional integration among South Asian nations. <answer>8 December 1985</answer>",
+      "ground_truths": [
+        "December 1985",
+        "8 December 1985"
+      ],
+      "correct": true,
+      "explanation": "The student's answer of \"8 December 1985\" is an exact match for one of the provided ground truth answers. The additional context provided does not contradict the core factual information.",
+      "raw_judge_response": "CORRECT: The student's answer of \"8 December 1985\" is an exact match for one of the provided ground truth answers. The additional context provided does not contradict the core factual information."
+    },
+    {
+      "id": "nq_validation_31",
+      "question": "who did bette midler portray in the rose?",
+      "student_answer": "Bette Midler portrayed Mary Rose Foster, a self-destructive rock star, in the 1979 film *The Rose*. The role was loosely based on the life of Janis Joplin and earned Midler an Academy Award nomination for Best Actress. <answer>Mary Rose Foster</answer>",
+      "ground_truths": [
+        "Mary Rose Foster"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies \"Mary Rose Foster\" as the character portrayed by Bette Midler, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies \"Mary Rose Foster\" as the character portrayed by Bette Midler, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_32",
+      "question": "who is the lead singer of depeche mode?",
+      "student_answer": "The lead singer of Depeche Mode is Dave Gahan, who joined the band in 1980 and has been their primary vocalist ever since. He is known for his distinctive baritone voice and charismatic stage presence. <answer>Gahan</answer>",
+      "ground_truths": [
+        "David Gahan"
+      ],
+      "correct": true,
+      "explanation": "The student answer provides the correct name \"Dave Gahan,\" which is a common nickname/shortened form of the ground truth answer \"David Gahan.\" The information is factually equivalent.",
+      "raw_judge_response": "CORRECT: The student answer provides the correct name \"Dave Gahan,\" which is a common nickname/shortened form of the ground truth answer \"David Gahan.\" The information is factually equivalent."
+    },
+    {
+      "id": "nq_validation_37",
+      "question": "when did taylor swift's first album release?",
+      "student_answer": "Taylor Swift's debut self-titled album was released on October 24, 2006, by Big Machine Records, marking the beginning of her highly successful music career. <answer>24 October 2006</answer>",
+      "ground_truths": [
+        "October 24, 2006",
+        "2005"
+      ],
+      "correct": false,
+      "explanation": "The student answer states October 24, 2006, which matches one ground truth, but also incorrectly claims the album was released by Big Machine Records, which contradicts the known fact that her debut album was released under the label Big Machine Records.",
+      "raw_judge_response": "INCORRECT: The student answer states October 24, 2006, which matches one ground truth, but also incorrectly claims the album was released by Big Machine Records, which contradicts the known fact that her debut album was released under the label Big Machine Records."
+    },
+    {
+      "id": "nq_validation_36",
+      "question": "where does no game no life anime end?",
+      "student_answer": "The No Game No Life anime adaptation ends after covering the first three volumes of the light novel series, concluding with the events of the Disboard Grand Prix. This stopping point leaves several major story arcs from the subsequent novels unadapted. <answer>Volume 3</answer>",
+      "ground_truths": [
+        "the Elkia Federation",
+        "the sixth volume"
+      ],
+      "correct": false,
+      "explanation": "The student answer states the anime ends with Volume 3, but the ground truth specifies the location \"the Elkia Federation\" or the later volume \"the sixth volume,\" which are factually different.",
+      "raw_judge_response": "INCORRECT: The student answer states the anime ends with Volume 3, but the ground truth specifies the location \"the Elkia Federation\" or the later volume \"the sixth volume,\" which are factually different."
+    },
+    {
+      "id": "nq_validation_33",
+      "question": "where did the butchers in the slaughterhouse cases live?",
+      "student_answer": "The plaintiffs in the Slaughterhouse Cases were butchers who lived and worked in New Orleans, Louisiana. They challenged a state law that created a monopoly on slaughterhouse operations, arguing it violated their rights under the newly enacted Fourteenth Amendment. <answer>New Orleans</answer>",
+      "ground_truths": [
+        "New Orleans"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"New Orleans\" and provides additional context that is factually consistent with the ground truth.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"New Orleans\" and provides additional context that is factually consistent with the ground truth."
+    },
+    {
+      "id": "nq_validation_35",
+      "question": "who wrote cant get you out of my head lyrics?",
+      "student_answer": "The lyrics for \"Can't Get You Out of My Head\" were written by English singer-songwriter Cathy Dennis and Australian musician Rob Davis. The song became a massive international hit for Kylie Minogue in 2001. <answer>Cathy Dennis and Rob Davis</answer>",
+      "ground_truths": [
+        "Cathy Dennis and Rob Davis",
+        "Rob Davis",
+        "Cathy Dennis"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Cathy Dennis and Rob Davis,\" which matches the primary ground truth answer. The additional context provided does not contradict the core factual information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Cathy Dennis and Rob Davis,\" which matches the primary ground truth answer. The additional context provided does not contradict the core factual information."
+    },
+    {
+      "id": "nq_validation_39",
+      "question": "who has the power (judicial) to make decisions in courts of law?",
+      "student_answer": "Judges and justices have the judicial power to make decisions in courts of law. They interpret and apply the law to resolve disputes, determine guilt or innocence, and impose sentences or judgments. This authority is vested in them by the constitution or statutory law of their jurisdiction.\n\n<answer>judges</answer>",
+      "ground_truths": [
+        "judges"
+      ],
+      "correct": true,
+      "explanation": "The student answer explicitly states \"Judges and justices\" which includes the ground truth answer \"judges.\" The additional context provided does not contradict the core fact that judges hold judicial power.",
+      "raw_judge_response": "CORRECT: The student answer explicitly states \"Judges and justices\" which includes the ground truth answer \"judges.\" The additional context provided does not contradict the core fact that judges hold judicial power."
+    },
+    {
+      "id": "nq_validation_38",
+      "question": "what are the three fifty shades of grey books?",
+      "student_answer": "The Fifty Shades trilogy consists of three erotic romance novels by E.L. James: \"Fifty Shades of Grey,\" \"Fifty Shades Darker,\" and \"Fifty Shades Freed.\" The series follows the relationship between college graduate Anastasia Steele and billionaire Christian Grey. <answer>Fifty Shades of Grey, Fifty Shades Darker, Fifty Shades Freed</answer>",
+      "ground_truths": [
+        "Fifty Shades of Grey",
+        "Fifty Shades Darker",
+        "Fifty Shades Freed"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly lists all three book titles from the trilogy, which are \"Fifty Shades of Grey,\" \"Fifty Shades Darker,\" and \"Fifty Shades Freed.\" This matches the ground truth answers, which are the individual titles of the three books.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly lists all three book titles from the trilogy, which are \"Fifty Shades of Grey,\" \"Fifty Shades Darker,\" and \"Fifty Shades Freed.\" This matches the ground truth answers, which are the individual titles of the three books."
+    },
+    {
+      "id": "nq_validation_34",
+      "question": "who developed the concept of total quality management?",
+      "student_answer": "The concept of Total Quality Management (TQM) was developed by several quality management pioneers, most notably W. Edwards Deming, Joseph Juran, and Kaoru Ishikawa. Their work, particularly after World War II, integrated principles of statistical process control, continuous improvement, and company-wide involvement into a cohesive management philosophy. While Deming is often most prominently associated with its popularization, TQM evolved from the contributions of multiple thought leaders.\n\n<answer>Deming, Juran, and Ishikawa</answer>",
+      "ground_truths": [
+        "W. Edwards Deming"
+      ],
+      "correct": true,
+      "explanation": "The student answer includes \"W. Edwards Deming\" as one of the key developers, which matches the ground truth. While the student answer provides additional context and names other contributors, it does not contradict the core fact that Deming was a developer of the concept.",
+      "raw_judge_response": "CORRECT: The student answer includes \"W. Edwards Deming\" as one of the key developers, which matches the ground truth. While the student answer provides additional context and names other contributors, it does not contradict the core fact that Deming was a developer of the concept."
+    },
+    {
+      "id": "nq_validation_43",
+      "question": "last episode of what happens to my family?",
+      "student_answer": "The last episode of the Korean drama \"What Happens to My Family?\" aired on March 15, 2015. The series concluded its successful 53-episode run on KBS2. <answer>15 March 2015</answer>",
+      "ground_truths": [
+        "53"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer is \"53\", which refers to the total number of episodes. The student's answer, \"15 March 2015\", is the air date of the final episode, which is a different piece of factual information.",
+      "raw_judge_response": "INCORRECT: The ground truth answer is \"53\", which refers to the total number of episodes. The student's answer, \"15 March 2015\", is the air date of the final episode, which is a different piece of factual information."
+    },
+    {
+      "id": "nq_validation_42",
+      "question": "who is the coach for the ottawa senators?",
+      "student_answer": "The current head coach of the Ottawa Senators is Travis Green, who was hired in May 2024 after serving as the interim head coach for the New Jersey Devils. He replaced Jacques Martin, who had taken over on an interim basis earlier in the season. <answer>Travis Green</answer>",
+      "ground_truths": [
+        "Guy Boucher"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer is \"Guy Boucher,\" while the student's answer is \"Travis Green.\" These are two different people, so the factual information does not match.",
+      "raw_judge_response": "INCORRECT: The ground truth answer is \"Guy Boucher,\" while the student's answer is \"Travis Green.\" These are two different people, so the factual information does not match."
+    },
+    {
+      "id": "nq_validation_44",
+      "question": "when is the last time the vikings were in the nfc championship?",
+      "student_answer": "The Minnesota Vikings last appeared in the NFC Championship Game on 21 January 2018, where they lost to the Philadelphia Eagles 38-7. This was the most recent time they advanced to the conference championship round. <answer>21 January 2018</answer>",
+      "ground_truths": [
+        "1976",
+        "2017/18"
+      ],
+      "correct": true,
+      "explanation": "The student's answer of \"21 January 2018\" is semantically equivalent to the ground truth answer \"2017/18\", as the 2017-18 NFL season's NFC Championship game was played on that date.",
+      "raw_judge_response": "CORRECT: The student's answer of \"21 January 2018\" is semantically equivalent to the ground truth answer \"2017/18\", as the 2017-18 NFL season's NFC Championship game was played on that date."
+    },
+    {
+      "id": "nq_validation_41",
+      "question": "i was a great islamic scholar and mathematician who died in 1131 ce?",
+      "student_answer": "You are likely referring to Omar Khayyam, a Persian polymath who was both a renowned Islamic scholar and mathematician. He made significant contributions to algebra, geometry, and calendar reform, and is also famous for his poetry, particularly the Rubaiyat. He died in 1131 CE in Nishapur. <answer>Omar Khayyam</answer>",
+      "ground_truths": [
+        "Omar Khayyam"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Omar Khayyam, a Persian polymath who was an Islamic scholar and mathematician and died in 1131 CE, which matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Omar Khayyam, a Persian polymath who was an Islamic scholar and mathematician and died in 1131 CE, which matches the ground truth."
+    },
+    {
+      "id": "nq_validation_45",
+      "question": "what are the colors of the netherlands flag?",
+      "student_answer": "The flag of the Netherlands consists of three horizontal stripes of equal size. From top to bottom, the colors are red, white, and blue. This tricolor design has been the national flag since 1937. <answer>red, white, blue</answer>",
+      "ground_truths": [
+        "blue",
+        "white",
+        "red"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly lists the colors \"red, white, blue,\" which matches the ground truth answers \"blue,\" \"white,\" and \"red.\" The additional context provided does not contradict the factual information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly lists the colors \"red, white, blue,\" which matches the ground truth answers \"blue,\" \"white,\" and \"red.\" The additional context provided does not contradict the factual information."
+    },
+    {
+      "id": "nq_validation_47",
+      "question": "when was the last time oklahoma won a national championship in football?",
+      "student_answer": "Oklahoma last won a national championship in football in 2000, when they went 13-0 and defeated Florida State in the Orange Bowl to claim the BCS National Championship under head coach Bob Stoops. <answer>2000</answer>",
+      "ground_truths": [
+        "2003",
+        "2000"
+      ],
+      "correct": true,
+      "explanation": "The student's answer of \"2000\" matches one of the provided ground truth answers. The additional context provided in the student's answer does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer of \"2000\" matches one of the provided ground truth answers. The additional context provided in the student's answer does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_46",
+      "question": "where is lord's prayer found in bible?",
+      "student_answer": "The Lord's Prayer is found in the New Testament, specifically in the Gospel of Matthew chapter 6, verses 9-13. It is also recorded in a slightly shorter form in the Gospel of Luke chapter 11, verses 2-4. This prayer was taught by Jesus to his disciples as a model for how to pray.\n\n<answer>Matthew 6:9-13 and Luke 11:2-4</answer>",
+      "ground_truths": [
+        "in the Gospel of Luke"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies the Gospel of Luke as one of the locations for the Lord's Prayer, which matches the ground truth answer. It also provides the specific chapter and verse, which is more detailed but does not contradict the ground truth.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies the Gospel of Luke as one of the locations for the Lord's Prayer, which matches the ground truth answer. It also provides the specific chapter and verse, which is more detailed but does not contradict the ground truth."
+    },
+    {
+      "id": "nq_validation_40",
+      "question": "what are the ranks in the us navy?",
+      "student_answer": "The United States Navy uses a structured rank system divided into enlisted personnel, warrant officers, and commissioned officers. Enlisted ranks range from Seaman Recruit to Master Chief Petty Officer of the Navy, while officer ranks go from Ensign to Admiral of the Navy. <answer>Enlisted: Seaman Recruit, Seaman Apprentice, Seaman, Petty Officer 3rd Class, Petty Officer 2nd Class, Petty Officer 1st Class, Chief Petty Officer, Senior Chief Petty Officer, Master Chief Petty Officer, MCPON. Warrant Officers: W-1 to W-5. Officers: Ensign, Lieutenant Junior Grade, Lieutenant, Lieutenant Commander, Commander, Captain, Rear Admiral (lower half), Rear Admiral (upper half), Vice Admiral, Admiral, Fleet Admiral.</answer>",
+      "ground_truths": [
+        "E-8s senior chief petty officer",
+        "E-9s master chief petty officer"
+      ],
+      "correct": false,
+      "explanation": "The student's answer provides a comprehensive list of Navy ranks, but the ground truth specifically asks for the ranks of E-8s and E-9s. The student's answer correctly identifies these as \"Senior Chief Petty Officer\" and \"Master Chief Petty Officer,\" but it does not explicitly mention the pay grades (E-8, E-9) as required by the ground truth answer.",
+      "raw_judge_response": "INCORRECT: The student's answer provides a comprehensive list of Navy ranks, but the ground truth specifically asks for the ranks of E-8s and E-9s. The student's answer correctly identifies these as \"Senior Chief Petty Officer\" and \"Master Chief Petty Officer,\" but it does not explicitly mention the pay grades (E-8, E-9) as required by the ground truth answer."
+    },
+    {
+      "id": "nq_validation_48",
+      "question": "location of the ten commandments in the bible?",
+      "student_answer": "The Ten Commandments appear in two books of the Old Testament: first in Exodus 20, when God gives them to Moses on Mount Sinai, and later in Deuteronomy 5, where Moses recounts them to the Israelites before they enter the Promised Land. <answer>Exodus 20 and Deuteronomy 5</answer>",
+      "ground_truths": [
+        "Exodus",
+        "Deuteronomy"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies the books of Exodus and Deuteronomy as the locations of the Ten Commandments, which matches the ground truth. The specific chapter references (Exodus 20 and Deuteronomy 5) provide more detail but do not contradict the required information.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies the books of Exodus and Deuteronomy as the locations of the Ten Commandments, which matches the ground truth. The specific chapter references (Exodus 20 and Deuteronomy 5) provide more detail but do not contradict the required information."
+    },
+    {
+      "id": "nq_validation_49",
+      "question": "where did the allies go after north africa?",
+      "student_answer": "After their successful campaigns in North Africa, the Allied forces launched the invasion of Sicily in July 1943, followed by the subsequent invasion of mainland Italy. This marked the beginning of the Italian Campaign, opening a new front against the Axis powers in Europe. <answer>Sicily and Italy</answer>",
+      "ground_truths": [
+        "Italy",
+        "the Italian Campaign"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Sicily and Italy.\" Since \"Italy\" is a ground truth answer, and the student's answer includes this correct information, it is considered correct. The mention of Sicily provides additional, non-contradictory context.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Sicily and Italy.\" Since \"Italy\" is a ground truth answer, and the student's answer includes this correct information, it is considered correct. The mention of Sicily provides additional, non-contradictory context."
+    },
+    {
+      "id": "nq_validation_51",
+      "question": "what is the name of the main artery which takes blood from the heart to the body?",
+      "student_answer": "The main artery that carries oxygenated blood from the heart to the rest of the body is the aorta. It originates from the left ventricle of the heart and is the largest artery in the human body. <answer>aorta</answer>",
+      "ground_truths": [
+        "The aorta",
+        "aorta"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies the aorta as the main artery, provides additional accurate context, and explicitly states the answer as \"aorta,\" which matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies the aorta as the main artery, provides additional accurate context, and explicitly states the answer as \"aorta,\" which matches the ground truth."
+    },
+    {
+      "id": "nq_validation_50",
+      "question": "what is the meaning of veronica in english?",
+      "student_answer": "The name Veronica is derived from Latin and means \"true image\" or \"true icon.\" It comes from the legend of Saint Veronica, who was said to have wiped the face of Jesus on his way to Calvary, and his image was miraculously imprinted on her cloth. <answer>true image</answer>",
+      "ground_truths": [
+        "she who brings victory"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer states that Veronica means \"she who brings victory,\" while the student's answer claims it means \"true image.\" These are two different meanings with different origins, and the student's answer does not match the provided ground truth.",
+      "raw_judge_response": "INCORRECT: The ground truth answer states that Veronica means \"she who brings victory,\" while the student's answer claims it means \"true image.\" These are two different meanings with different origins, and the student's answer does not match the provided ground truth."
+    },
+    {
+      "id": "nq_validation_52",
+      "question": "who played solomon in little house on the prairie?",
+      "student_answer": "Solomon was played by actor Stan Ivar in the Little House on the Prairie television series. He portrayed the character in the episode \"The Hunters\" during the show's fourth season. <answer>Stan Ivar</answer>",
+      "ground_truths": [
+        "Todd Bridges"
+      ],
+      "correct": false,
+      "explanation": "The student answer states \"Stan Ivar\" while the ground truth answer is \"Todd Bridges\". These are two different actors, so the information is factually wrong.",
+      "raw_judge_response": "INCORRECT: The student answer states \"Stan Ivar\" while the ground truth answer is \"Todd Bridges\". These are two different actors, so the information is factually wrong."
+    },
+    {
+      "id": "nq_validation_53",
+      "question": "who does eric end up with in that 70s show?",
+      "student_answer": "In the series finale of That '70s Show, Eric Forman ends up with Donna Pinciotti, his longtime girlfriend throughout most of the series. After returning from Africa, they rekindle their relationship, and the show concludes with them together at a New Year's Eve party. <answer>Donna</answer>",
+      "ground_truths": [
+        "Donna"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Donna Pinciotti as the person Eric ends up with, which matches the ground truth answer. The additional context provided in the student's explanation does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Donna Pinciotti as the person Eric ends up with, which matches the ground truth answer. The additional context provided in the student's explanation does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_57",
+      "question": "who wrote papa got a brand new bag?",
+      "student_answer": "\"Papa's Got a Brand New Bag\" was written and performed by the legendary soul singer James Brown. It was released in 1965 and became one of his signature songs, helping to pioneer the funk music genre. <answer>James Brown</answer>",
+      "ground_truths": [
+        "James Brown"
+      ],
+      "correct": true,
+      "explanation": "The student answer clearly states \"James Brown\" as the writer and performer, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer clearly states \"James Brown\" as the writer and performer, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_54",
+      "question": "an object that moves around an external axis is said to be?",
+      "student_answer": "An object that moves around an external axis is said to be in rotation, specifically revolving around that axis rather than spinning on its own internal axis. This type of motion is often described as orbital or circular motion depending on the context. <answer>revolving</answer>",
+      "ground_truths": [
+        "revolution or orbital revolution",
+        "orbit"
+      ],
+      "correct": true,
+      "explanation": "The student's answer includes \"revolving\" and \"orbital,\" which are semantically equivalent to the ground truth answers \"revolution or orbital revolution\" and \"orbit.\" The additional context provided does not contradict the core concept.",
+      "raw_judge_response": "CORRECT: The student's answer includes \"revolving\" and \"orbital,\" which are semantically equivalent to the ground truth answers \"revolution or orbital revolution\" and \"orbit.\" The additional context provided does not contradict the core concept."
+    },
+    {
+      "id": "nq_validation_56",
+      "question": "who sang the song good morning good morning?",
+      "student_answer": "The song \"Good Morning Good Morning\" was performed by The Beatles and appears on their 1967 album *Sgt. Pepper's Lonely Hearts Club Band*. It was primarily written by John Lennon, who also provides the lead vocals. <answer>The Beatles</answer>",
+      "ground_truths": [
+        "Gene Kelly",
+        "Donald O'Connor",
+        "Judy Garland",
+        "Debbie Reynolds",
+        "Mickey Rooney"
+      ],
+      "correct": false,
+      "explanation": "The student answer states \"The Beatles,\" but the ground truth answers list performers from a different song with the same name, such as Gene Kelly and Debbie Reynolds. The information provided is factually wrong for the song being referenced.",
+      "raw_judge_response": "INCORRECT: The student answer states \"The Beatles,\" but the ground truth answers list performers from a different song with the same name, such as Gene Kelly and Debbie Reynolds. The information provided is factually wrong for the song being referenced."
+    },
+    {
+      "id": "nq_validation_55",
+      "question": "architectural elements forming rib vaults eg wells cathedral?",
+      "student_answer": "Rib vaults are composed of several key architectural elements including diagonal ribs that form the main structural framework, transverse ribs that span between supporting walls, and wall ribs that follow the curve of the walls. At Wells Cathedral, these elements converge at central bosses, creating the complex, skeletal stone framework characteristic of Gothic architecture. <answer>diagonal ribs, transverse ribs, wall ribs, bosses</answer>",
+      "ground_truths": [
+        "an armature of piped masonry",
+        "barrel vaults",
+        "two to three barrel vaults"
+      ],
+      "correct": false,
+      "explanation": "The student's answer lists specific components of a rib vault (diagonal ribs, transverse ribs, wall ribs, bosses), while the ground truth answers describe the rib vault's structure using different, non-matching terms (\"an armature of piped masonry\") or incorrectly identify it as being made from \"barrel vaults.\" The student's details are not semantically equivalent to any of the provided ground truths.",
+      "raw_judge_response": "INCORRECT: The student's answer lists specific components of a rib vault (diagonal ribs, transverse ribs, wall ribs, bosses), while the ground truth answers describe the rib vault's structure using different, non-matching terms (\"an armature of piped masonry\") or incorrectly identify it as being made from \"barrel vaults.\" The student's details are not semantically equivalent to any of the provided ground truths."
+    },
+    {
+      "id": "nq_validation_59",
+      "question": "who wrote it's a long long way to pasadena?",
+      "student_answer": "\"It's a Long Long Way to Pasadena\" was written by American composer and lyricist Harry Ruby, with lyrics by Bert Kalmar. The song was featured in the 1930 film \"Check and Double Check\" starring the popular radio duo Amos 'n' Andy. <answer>Harry Ruby and Bert Kalmar</answer>",
+      "ground_truths": [
+        "John Young",
+        "Harry Vanda",
+        "David Hemmings",
+        "George Young"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answers list \"John Young\", \"Harry Vanda\", \"David Hemmings\", and \"George Young\" as the songwriters. The student's answer of \"Harry Ruby and Bert Kalmar\" is factually different and does not match any of the provided correct names.",
+      "raw_judge_response": "INCORRECT: The ground truth answers list \"John Young\", \"Harry Vanda\", \"David Hemmings\", and \"George Young\" as the songwriters. The student's answer of \"Harry Ruby and Bert Kalmar\" is factually different and does not match any of the provided correct names."
+    },
+    {
+      "id": "nq_validation_58",
+      "question": "where does a roadrunner live in the desert?",
+      "student_answer": "Roadrunners primarily inhabit desert and arid regions of the southwestern United States and Mexico, where they nest and take shelter in low-lying vegetation, shrubs, and cacti. They are ground-dwelling birds that use these areas for protection from predators and the harsh sun. <answer>low-lying vegetation and shrubs</answer>",
+      "ground_truths": [
+        "mountainous shrubland",
+        "arid lowland"
+      ],
+      "correct": false,
+      "explanation": "The student answer specifies \"low-lying vegetation and shrubs,\" which is too vague and does not match the specific habitats of \"mountainous shrubland\" or \"arid lowland\" provided in the ground truth. While \"shrubs\" is mentioned, the omission of the specific \"mountainous\" and \"lowland\" contexts makes the answer insufficiently precise.",
+      "raw_judge_response": "INCORRECT: The student answer specifies \"low-lying vegetation and shrubs,\" which is too vague and does not match the specific habitats of \"mountainous shrubland\" or \"arid lowland\" provided in the ground truth. While \"shrubs\" is mentioned, the omission of the specific \"mountainous\" and \"lowland\" contexts makes the answer insufficiently precise."
+    },
+    {
+      "id": "nq_validation_60",
+      "question": "what's the dog's name on tom and jerry?",
+      "student_answer": "The dog character in Tom and Jerry is named Spike, who is a large, tough bulldog that often appears as Jerry's protector against Tom's schemes. He is sometimes accompanied by his small, gentle son named Tyke in later episodes. <answer>Spike</answer>",
+      "ground_truths": [
+        "Spike"
+      ],
+      "correct": true,
+      "explanation": "The student's answer clearly states \"Spike\" as the dog's name, which matches the ground truth. The additional context provided about the character does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer clearly states \"Spike\" as the dog's name, which matches the ground truth. The additional context provided about the character does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_63",
+      "question": "where does route 66 start on the west coast?",
+      "student_answer": "Route 66 does not start on the West Coast; it begins in downtown Chicago, Illinois, and runs westward to Santa Monica, California. The western terminus is at the Santa Monica Pier, which is on the Pacific Coast. <answer>Chicago</answer>",
+      "ground_truths": [
+        "in Santa Monica"
+      ],
+      "correct": false,
+      "explanation": "The student's answer states that Route 66 begins in Chicago, while the ground truth states it starts in Santa Monica. These are contradictory statements about the route's starting point.",
+      "raw_judge_response": "INCORRECT: The student's answer states that Route 66 begins in Chicago, while the ground truth states it starts in Santa Monica. These are contradictory statements about the route's starting point."
+    },
+    {
+      "id": "nq_validation_61",
+      "question": "who are nominated for president of india 2017?",
+      "student_answer": "In the 2017 Indian presidential election, the two main candidates were Ram Nath Kovind, nominated by the National Democratic Alliance (NDA), and Meira Kumar, nominated by a coalition of opposition parties. Ram Nath Kovind ultimately won the election and became the 14th President of India. <answer>Ram Nath Kovind and Meira Kumar</answer>",
+      "ground_truths": [
+        "Meira Kumar",
+        "Ram Nath Kovind"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies both Ram Nath Kovind and Meira Kumar as the nominees, which matches the ground truth answers.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies both Ram Nath Kovind and Meira Kumar as the nominees, which matches the ground truth answers."
+    },
+    {
+      "id": "nq_validation_64",
+      "question": "who is the first wife on sister wives?",
+      "student_answer": "The first wife in the polygamous family featured on the reality TV show *Sister Wives* is Meri Brown. She was the first and only wife of Kody Brown for three years before he married his second wife, Janelle. <answer>Meri Brown</answer>",
+      "ground_truths": [
+        "Meri"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies \"Meri Brown\" as the first wife, which is semantically equivalent to the ground truth answer \"Meri\". The additional context provided in the student's answer does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies \"Meri Brown\" as the first wife, which is semantically equivalent to the ground truth answer \"Meri\". The additional context provided in the student's answer does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_62",
+      "question": "where does the path train stop in newark?",
+      "student_answer": "The PATH train serves Newark at Newark Penn Station, which is located in the city's downtown area and provides connections to NJ Transit trains, buses, and the Light Rail. This station is on the Newark-World Trade Center line (running daily) and the Newark-33rd Street line (via Hoboken, running on weekdays). <answer>Newark Penn Station</answer>",
+      "ground_truths": [
+        "Newark Penn Station"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Newark Penn Station\" as the stop, which matches the ground truth answer. The additional details provided do not contradict the core fact and are accurate.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Newark Penn Station\" as the stop, which matches the ground truth answer. The additional details provided do not contradict the core fact and are accurate."
+    },
+    {
+      "id": "nq_validation_67",
+      "question": "coldplay song i will try to fix you?",
+      "student_answer": "\"I Will Try to Fix You\" is actually a song by Coldplay called \"Fix You\" from their 2005 album X&Y. The song is known for its emotional lyrics and powerful crescendo, often played during poignant moments. <answer>Fix You</answer>",
+      "ground_truths": [
+        "\"Fix You\""
+      ],
+      "correct": true,
+      "explanation": "The student correctly identifies the song as \"Fix You\" and provides accurate contextual information, with the core answer matching the ground truth.",
+      "raw_judge_response": "CORRECT: The student correctly identifies the song as \"Fix You\" and provides accurate contextual information, with the core answer matching the ground truth."
+    },
+    {
+      "id": "nq_validation_65",
+      "question": "when did houston go to the american league?",
+      "student_answer": "The Houston Astros moved from the National League to the American League in 2013 as part of a Major League Baseball realignment. This move was made to balance the leagues, allowing both the AL and NL to have 15 teams each and facilitating the new playoff format. <answer>2013</answer>",
+      "ground_truths": [
+        "2013"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states the correct year, 2013, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states the correct year, 2013, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_66",
+      "question": "when did they stop cigarette advertising on television?",
+      "student_answer": "Cigarette advertising on television was banned in the United States by the Public Health Cigarette Smoking Act, which went into effect on January 2, 1971. This law made it illegal to advertise cigarettes on radio and television, with the final commercials airing just before midnight on January 1, 1971. <answer>2 January 1971</answer>",
+      "ground_truths": [
+        "January 2, 1971",
+        "1970"
+      ],
+      "correct": true,
+      "explanation": "The student's answer provides the specific date \"2 January 1971,\" which is semantically equivalent to the ground truth answer \"January 2, 1971.\"",
+      "raw_judge_response": "CORRECT: The student's answer provides the specific date \"2 January 1971,\" which is semantically equivalent to the ground truth answer \"January 2, 1971.\""
+    },
+    {
+      "id": "nq_validation_68",
+      "question": "points on a sphere or angles in a circle are measured in units called?",
+      "student_answer": "Points on a sphere or angles in a circle are measured in units called degrees or radians. Degrees divide a circle into 360 equal parts, while radians are based on the radius of the circle and are commonly used in higher mathematics. <answer>degrees or radians</answer>",
+      "ground_truths": [
+        "radians"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answer specifies \"radians\" as the correct unit, but the student's answer includes both \"degrees\" and \"radians,\" which introduces an additional, unsupported unit. While the explanation about radians is accurate, the inclusion of \"degrees\" makes the answer factually broader than the ground truth.",
+      "raw_judge_response": "INCORRECT: The ground truth answer specifies \"radians\" as the correct unit, but the student's answer includes both \"degrees\" and \"radians,\" which introduces an additional, unsupported unit. While the explanation about radians is accurate, the inclusion of \"degrees\" makes the answer factually broader than the ground truth."
+    },
+    {
+      "id": "nq_validation_71",
+      "question": "how many games in a row have the uconn women's basketball team won?",
+      "student_answer": "The UConn women's basketball team currently holds the longest winning streak in NCAA Division I basketball history at 111 consecutive games, which they achieved from 2014 to 2017. <answer>111</answer>",
+      "ground_truths": [
+        "111 straight wins",
+        "111",
+        "90"
+      ],
+      "correct": true,
+      "explanation": "The student's answer of \"111\" matches one of the ground truth answers exactly and correctly states the number of consecutive games won.",
+      "raw_judge_response": "CORRECT: The student's answer of \"111\" matches one of the ground truth answers exactly and correctly states the number of consecutive games won."
+    },
+    {
+      "id": "nq_validation_72",
+      "question": "is there a name for the at symbol?",
+      "student_answer": "Yes, the at symbol (@) is officially called the \"commercial at\" or simply \"at sign.\" It is widely used in email addresses and social media handles. <answer>commercial at</answer>",
+      "ground_truths": [
+        "commercial at",
+        "at symbol",
+        "at sign"
+      ],
+      "correct": true,
+      "explanation": "The student's answer includes \"commercial at,\" which is one of the acceptable ground truth answers. The additional context provided does not contradict the required factual information.",
+      "raw_judge_response": "CORRECT: The student's answer includes \"commercial at,\" which is one of the acceptable ground truth answers. The additional context provided does not contradict the required factual information."
+    },
+    {
+      "id": "nq_validation_70",
+      "question": "where does the white witch live in narnia?",
+      "student_answer": "The White Witch, Jadis, lives in a magnificent ice palace located in the far northern region of Narnia. This palace is situated in the land of Harfang and serves as her primary fortress and seat of power. <answer>ice palace in the north</answer>",
+      "ground_truths": [
+        "her castle"
+      ],
+      "correct": true,
+      "explanation": "The student's answer \"ice palace in the north\" is semantically equivalent to the ground truth \"her castle,\" as both refer to the White Witch's primary residence and fortress. The additional details about its location and construction are consistent with the source material and do not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer \"ice palace in the north\" is semantically equivalent to the ground truth \"her castle,\" as both refer to the White Witch's primary residence and fortress. The additional details about its location and construction are consistent with the source material and do not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_69",
+      "question": "the oligodynamic effect is a phenomenon that describes?",
+      "student_answer": "The oligodynamic effect describes the ability of small amounts of certain metals, particularly heavy metals like silver, copper, and mercury, to exert a toxic effect on bacteria, fungi, and other microorganisms. This antimicrobial property is why these metals have been used for centuries in purifying water, preserving food, and preventing infections. <answer>toxic effect of small amounts of certain metals on microorganisms</answer>",
+      "ground_truths": [
+        "a biocidal effect of metals"
+      ],
+      "correct": true,
+      "explanation": "The student's answer accurately conveys the core concept of the oligodynamic effect, which is the toxic (biocidal) effect of small amounts of certain metals on microorganisms. This is semantically equivalent to the ground truth answer \"a biocidal effect of metals.\"",
+      "raw_judge_response": "CORRECT: The student's answer accurately conveys the core concept of the oligodynamic effect, which is the toxic (biocidal) effect of small amounts of certain metals on microorganisms. This is semantically equivalent to the ground truth answer \"a biocidal effect of metals.\""
+    },
+    {
+      "id": "nq_validation_75",
+      "question": "who plays captain phasma in star wars the force awakens?",
+      "student_answer": "Captain Phasma in Star Wars: The Force Awakens was played by actress Gwendoline Christie. She is best known for her role as Brienne of Tarth in the HBO series Game of Thrones. <answer>Christie</answer>",
+      "ground_truths": [
+        "Gwendoline Christie"
+      ],
+      "correct": true,
+      "explanation": "The student answer provides the correct name \"Gwendoline Christie\" and even includes the additional clarification \"Christie\" in the answer tags, which matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student answer provides the correct name \"Gwendoline Christie\" and even includes the additional clarification \"Christie\" in the answer tags, which matches the ground truth."
+    },
+    {
+      "id": "nq_validation_76",
+      "question": "who sings she's like the wind lyrics?",
+      "student_answer": "\"She's Like the Wind\" was performed by Patrick Swayze, who also co-wrote the song. It was featured on the soundtrack for the 1987 film *Dirty Dancing*, in which Swayze starred. <answer>Swayze</answer>",
+      "ground_truths": [
+        "Wendy Fraser",
+        "Patrick Swayze"
+      ],
+      "correct": true,
+      "explanation": "The student answer identifies Patrick Swayze as the performer, which matches one of the ground truth answers.",
+      "raw_judge_response": "CORRECT: The student answer identifies Patrick Swayze as the performer, which matches one of the ground truth answers."
+    },
+    {
+      "id": "nq_validation_73",
+      "question": "who sings the theme song for the tv show cops?",
+      "student_answer": "The theme song for the TV show *Cops* is \"Bad Boys,\" which is performed by the reggae group Inner Circle. The song was originally released on their 1987 album *One Way* but gained widespread recognition after being used as the show's opening theme. <answer>Inner Circle</answer>",
+      "ground_truths": [
+        "Inner Circle",
+        "Jamaican reggae band Inner Circle"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies \"Inner Circle\" as the performer of the theme song, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies \"Inner Circle\" as the performer of the theme song, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_74",
+      "question": "when was corporal punishment banned in south africa?",
+      "student_answer": "Corporal punishment was banned in South African public schools through a landmark Constitutional Court ruling in 1995, which declared it a violation of children's fundamental rights. This decision was a significant step following the end of apartheid and was based on the new constitution's provisions for human dignity and freedom from violence. <answer>1995</answer>",
+      "ground_truths": [
+        "1997"
+      ],
+      "correct": false,
+      "explanation": "The student answer states the ban occurred in 1995, but the ground truth answer is 1997. These are different years and represent a factual discrepancy.",
+      "raw_judge_response": "INCORRECT: The student answer states the ban occurred in 1995, but the ground truth answer is 1997. These are different years and represent a factual discrepancy."
+    },
+    {
+      "id": "nq_validation_77",
+      "question": "when did marathon change its name to snickers?",
+      "student_answer": "The Mars candy bar known as Marathon in the UK was rebranded as Snickers in 1990 to create a single, globally recognized brand name. This change aligned the product with its name in the United States and most other markets. <answer>1990</answer>",
+      "ground_truths": [
+        "19 July 1990"
+      ],
+      "correct": true,
+      "explanation": "The student answer provides the correct year (1990) and the specific date \"19 July 1990\" from the ground truth is semantically equivalent for the purpose of this question, as the year is the key piece of information.",
+      "raw_judge_response": "CORRECT: The student answer provides the correct year (1990) and the specific date \"19 July 1990\" from the ground truth is semantically equivalent for the purpose of this question, as the year is the key piece of information."
+    },
+    {
+      "id": "nq_validation_78",
+      "question": "who captained the first european ship to sail around the tip of africa?",
+      "student_answer": "The first European ship to sail around the southern tip of Africa was captained by Portuguese explorer Bartolomeu Dias in 1488. His expedition successfully rounded the Cape of Good Hope, proving that the Atlantic and Indian Oceans were connected and opening a sea route from Europe to Asia. <answer>Bartolomeu Dias</answer>",
+      "ground_truths": [
+        "Bartolomeu Dias"
+      ],
+      "correct": true,
+      "explanation": "The student's answer clearly and correctly identifies Bartolomeu Dias as the captain, which matches the ground truth answer. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer clearly and correctly identifies Bartolomeu Dias as the captain, which matches the ground truth answer. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_80",
+      "question": "who sang let me tell you about the birds and the bees?",
+      "student_answer": "The song \"Let Me Tell You About the Birds and the Bees\" was originally recorded by Jewel Akens in 1964. It became his biggest hit, reaching number 3 on the Billboard Hot 100 chart. <answer>Jewel Akens</answer>",
+      "ground_truths": [
+        "Jewel Akens"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies Jewel Akens as the singer and provides additional, accurate context. The core factual information matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies Jewel Akens as the singer and provides additional, accurate context. The core factual information matches the ground truth."
+    },
+    {
+      "id": "nq_validation_79",
+      "question": "who ordered the forbidden city to be built?",
+      "student_answer": "The Forbidden City was commissioned by the Yongle Emperor of the Ming Dynasty, who moved the capital from Nanjing to Beijing and initiated its construction as the new imperial palace. Building began in 1406 and was completed in 1420, serving as the home of Chinese emperors for nearly 500 years. <answer>Yongle Emperor</answer>",
+      "ground_truths": [
+        "Zhu Di"
+      ],
+      "correct": true,
+      "explanation": "The Yongle Emperor is the temple name of Zhu Di, the same person. The student's answer is factually equivalent to the ground truth.",
+      "raw_judge_response": "CORRECT: The Yongle Emperor is the temple name of Zhu Di, the same person. The student's answer is factually equivalent to the ground truth."
+    },
+    {
+      "id": "nq_validation_81",
+      "question": "who has the power to approve or veto legislation constitution?",
+      "student_answer": "The power to approve or veto legislation in the United States constitution is vested in the President. This executive authority allows the President to either sign bills into law or reject them, though Congress can override a veto with a two-thirds majority vote in both houses. <answer>President</answer>",
+      "ground_truths": [
+        "the President"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies the President as having the power to approve or veto legislation, which matches the ground truth answer. The additional context provided about the veto override process does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies the President as having the power to approve or veto legislation, which matches the ground truth answer. The additional context provided about the veto override process does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_83",
+      "question": "who is the minister of local government in zimbabwe?",
+      "student_answer": "The Minister of Local Government and Public Works in Zimbabwe is Winston Chitando, who was appointed to this position in September 2023. He previously served as the Minister of Mines and Mining Development. <answer>Winston Chitando</answer>",
+      "ground_truths": [
+        "Hon July Moyo"
+      ],
+      "correct": false,
+      "explanation": "The student answer states Winston Chitando, but the ground truth is Hon July Moyo. This is a direct factual contradiction.",
+      "raw_judge_response": "INCORRECT: The student answer states Winston Chitando, but the ground truth is Hon July Moyo. This is a direct factual contradiction."
+    },
+    {
+      "id": "nq_validation_82",
+      "question": "how many seasons of the rugrats are there?",
+      "student_answer": "The original Rugrats series ran for 9 seasons from 1991 to 2004, with a revival series that premiered in 2021 adding additional seasons. The total number of seasons depends on whether you count the original and revival as one continuous series or separate productions. <answer>9</answer>",
+      "ground_truths": [
+        "9 seasons",
+        "9"
+      ],
+      "correct": true,
+      "explanation": "The student's answer contains the correct factual information \"9\" which matches the ground truth answer, even though it provides additional context about the revival series.",
+      "raw_judge_response": "CORRECT: The student's answer contains the correct factual information \"9\" which matches the ground truth answer, even though it provides additional context about the revival series."
+    },
+    {
+      "id": "nq_validation_86",
+      "question": "how many pieces in a terry's chocolate orange?",
+      "student_answer": "A Terry's Chocolate Orange contains 20 individual chocolate segments that can be broken apart, designed to resemble the segments of a real orange. These pieces are made of orange-flavored milk chocolate and are arranged around a central core. <answer>20</answer>",
+      "ground_truths": [
+        "six",
+        "20"
+      ],
+      "correct": true,
+      "explanation": "The student answer states \"20\" which matches one of the provided ground truth answers.",
+      "raw_judge_response": "CORRECT: The student answer states \"20\" which matches one of the provided ground truth answers."
+    },
+    {
+      "id": "nq_validation_85",
+      "question": "when did toyota start making cars in the us?",
+      "student_answer": "Toyota began manufacturing vehicles in the United States in 1986 when its joint venture with General Motors, New United Motor Manufacturing Inc. (NUMMI), started producing the Toyota Corolla in Fremont, California. This marked the first time Toyota cars were built on American soil. <answer>1986</answer>",
+      "ground_truths": [
+        "by the early 1980s",
+        "1984"
+      ],
+      "correct": false,
+      "explanation": "The student answer states 1986, but the ground truth answers are \"by the early 1980s\" and \"1984\". These are different and conflicting years.",
+      "raw_judge_response": "INCORRECT: The student answer states 1986, but the ground truth answers are \"by the early 1980s\" and \"1984\". These are different and conflicting years."
+    },
+    {
+      "id": "nq_validation_87",
+      "question": "who plays the saint of killers on preacher?",
+      "student_answer": "The Saint of Killers in the AMC television series Preacher is portrayed by Scottish actor Graham McTavish. He appears in the role across multiple seasons of the show, bringing the formidable and relentless character from the comics to life. <answer>McTavish</answer>",
+      "ground_truths": [
+        "Graham McTavish"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Graham McTavish as the actor and provides the correct name within the designated answer tags.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Graham McTavish as the actor and provides the correct name within the designated answer tags."
+    },
+    {
+      "id": "nq_validation_88",
+      "question": "when did the royal proclamation of 1763 end?",
+      "student_answer": "The Royal Proclamation of 1763 was never formally \"ended\" by a single event; instead, its provisions were gradually superseded by subsequent treaties and legislation, most notably the Treaty of Fort Stanwix in 1768 and the Quebec Act of 1774, which redefined colonial boundaries and governance. <answer>Never formally ended; superseded by later treaties and acts</answer>",
+      "ground_truths": [
+        "the American Revolutionary War",
+        "with the American Revolutionary War",
+        "1783"
+      ],
+      "correct": false,
+      "explanation": "The ground truth answers state the Royal Proclamation of 1763 ended with the American Revolutionary War (1783), which was the formal event that nullified it. The student's answer, while factually describing the proclamation's gradual erosion, incorrectly states it was \"never formally ended\" and omits the war as the definitive endpoint.",
+      "raw_judge_response": "INCORRECT: The ground truth answers state the Royal Proclamation of 1763 ended with the American Revolutionary War (1783), which was the formal event that nullified it. The student's answer, while factually describing the proclamation's gradual erosion, incorrectly states it was \"never formally ended\" and omits the war as the definitive endpoint."
+    },
+    {
+      "id": "nq_validation_84",
+      "question": "what was the initial effect of the transition from command to market economies in eastern europe?",
+      "student_answer": "The initial transition from command to market economies in Eastern Europe following the fall of communism in the late 1980s and early 1990s resulted in severe economic hardship. This period was characterized by sharp declines in GDP, hyperinflation, and a rapid rise in unemployment as state-owned industries were privatized and subsidies were cut. The social consequences were profound, leading to increased poverty and social inequality during the early years of the reform process.\n\n<answer>sharp economic decline, hyperinflation, and rising unemployment</answer>",
+      "ground_truths": [
+        "Inequality of opportunity"
+      ],
+      "correct": false,
+      "explanation": "The student's answer focuses on economic hardships like GDP decline, hyperinflation, and unemployment. The ground truth answer, \"Inequality of opportunity,\" is a social consequence and is not semantically equivalent to the specific economic effects listed by the student.",
+      "raw_judge_response": "INCORRECT: The student's answer focuses on economic hardships like GDP decline, hyperinflation, and unemployment. The ground truth answer, \"Inequality of opportunity,\" is a social consequence and is not semantically equivalent to the specific economic effects listed by the student."
+    },
+    {
+      "id": "nq_validation_90",
+      "question": "jonny cash one piece at a time car?",
+      "student_answer": "Johnny Cash's song \"One Piece at a Time\" humorously tells the story of an auto worker who builds a car by stealing parts over many years, resulting in a mismatched Cadillac. The vehicle was famously assembled from parts spanning multiple model years, from 1949 through the 1970s. <answer>Cadillac</answer>",
+      "ground_truths": [
+        "Cadillac"
+      ],
+      "correct": true,
+      "explanation": "The student's answer correctly identifies \"Cadillac\" as the type of car, which matches the ground truth answer. The additional context provided in the student's answer is factually accurate and does not contradict the required information.",
+      "raw_judge_response": "CORRECT: The student's answer correctly identifies \"Cadillac\" as the type of car, which matches the ground truth answer. The additional context provided in the student's answer is factually accurate and does not contradict the required information."
+    },
+    {
+      "id": "nq_validation_89",
+      "question": "who is playing the halftime show at super bowl 2016?",
+      "student_answer": "The halftime show for Super Bowl 50 in 2016 featured a performance by Beyoncé, who was joined by special guests Bruno Mars and Coldplay. Coldplay served as the main act for the show, which took place on 7 February 2016 at Levi's Stadium in Santa Clara. <answer>Coldplay, Beyoncé, and Bruno Mars</answer>",
+      "ground_truths": [
+        "Beyoncé",
+        "Coldplay",
+        "Bruno Mars"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Beyoncé, Bruno Mars, and Coldplay as the performers, which matches the provided ground truth answers.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Beyoncé, Bruno Mars, and Coldplay as the performers, which matches the provided ground truth answers."
+    },
+    {
+      "id": "nq_validation_91",
+      "question": "what is the minimum wage in france per hour?",
+      "student_answer": "The minimum wage in France, known as the SMIC (Salaire Minimum Interprofessionnel de Croissance), is adjusted annually and was set at €11.65 per hour as of 1 January 2024. This rate applies to all employees over the age of 18 and is subject to change based on inflation and economic conditions. <answer>€11.65</answer>",
+      "ground_truths": [
+        "11.16",
+        "€9.88 per hour."
+      ],
+      "correct": false,
+      "explanation": "The student answer states €11.65, but the ground truth answers are \"11.16\" and \"€9.88 per hour.\" These are different values and do not match.",
+      "raw_judge_response": "INCORRECT: The student answer states €11.65, but the ground truth answers are \"11.16\" and \"€9.88 per hour.\" These are different values and do not match."
+    },
+    {
+      "id": "nq_validation_92",
+      "question": "describe the three phases of the normal blood clotting process?",
+      "student_answer": "The normal blood clotting process occurs in three sequential phases: first, vascular spasm where damaged blood vessels constrict to reduce blood flow; second, platelet plug formation where platelets adhere to the site and aggregate to form a temporary seal; and third, coagulation where a complex cascade of clotting factors produces fibrin strands that reinforce the platelet plug into a stable clot. <answer>vascular spasm, platelet plug formation, coagulation</answer>",
+      "ground_truths": [
+        "blood coagulation",
+        "vasoconstriction,"
+      ],
+      "correct": true,
+      "explanation": "The student's answer accurately describes the three phases as vascular spasm (which is semantically equivalent to \"vasoconstriction\"), platelet plug formation, and coagulation (which matches \"blood coagulation\"). The answer provides the correct sequence and details for each phase.",
+      "raw_judge_response": "CORRECT: The student's answer accurately describes the three phases as vascular spasm (which is semantically equivalent to \"vasoconstriction\"), platelet plug formation, and coagulation (which matches \"blood coagulation\"). The answer provides the correct sequence and details for each phase."
+    },
+    {
+      "id": "nq_validation_94",
+      "question": "what is the oldest street in the philippines?",
+      "student_answer": "The oldest street in the Philippines is Colon Street in Cebu City, which was established by Spanish colonizers in 1565 during the time of Miguel López de Legazpi. It served as the main artery of the oldest city in the country and was the original heart of trade and commerce. <answer>Colon Street</answer>",
+      "ground_truths": [
+        "Cebu City",
+        "Colon Street"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"Colon Street,\" which is one of the provided ground truth answers. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"Colon Street,\" which is one of the provided ground truth answers. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_93",
+      "question": "when did amnesia the dark descent come out?",
+      "student_answer": "Amnesia: The Dark Descent was released on 8 September 2010 for Microsoft Windows, developed and published by the Swedish independent game studio Frictional Games. The game is a first-person survival horror title that became highly influential for its emphasis on atmosphere and helplessness over combat. <answer>8 September 2010</answer>",
+      "ground_truths": [
+        "8 September 2010"
+      ],
+      "correct": true,
+      "explanation": "The student's answer explicitly states \"8 September 2010\", which is an exact match for the ground truth answer. The additional context provided does not contradict the core factual information.",
+      "raw_judge_response": "CORRECT: The student's answer explicitly states \"8 September 2010\", which is an exact match for the ground truth answer. The additional context provided does not contradict the core factual information."
+    },
+    {
+      "id": "nq_validation_96",
+      "question": "who played bat masterson in the tv series?",
+      "student_answer": "The role of Bat Masterson in the television series was played by actor Gene Barry. The show aired from 1958 to 1961 and was based on the real-life lawman and gambler of the American Old West. <answer>Gene Barry</answer>",
+      "ground_truths": [
+        "Gene Barry"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies Gene Barry as the actor who played Bat Masterson, which matches the ground truth. The additional context provided does not contradict the core fact.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies Gene Barry as the actor who played Bat Masterson, which matches the ground truth. The additional context provided does not contradict the core fact."
+    },
+    {
+      "id": "nq_validation_97",
+      "question": "who sings sugar sugar you are my candy girl?",
+      "student_answer": "\"Sugar, Sugar\" was performed by The Archies, a fictional band created for the Archie Comics franchise. The song was actually recorded by studio musicians, with lead vocals by Ron Dante. It became a massive hit in 1969, reaching number one on the Billboard Hot 100 chart.\n\n<answer>The Archies</answer>",
+      "ground_truths": [
+        "the Archies"
+      ],
+      "correct": true,
+      "explanation": "The student answer explicitly states that \"Sugar, Sugar\" was performed by The Archies, which matches the ground truth answer \"the Archies\". The additional context provided (about it being a fictional band, Ron Dante, etc.) is supplementary factual information that does not contradict the core answer.",
+      "raw_judge_response": "CORRECT: The student answer explicitly states that \"Sugar, Sugar\" was performed by The Archies, which matches the ground truth answer \"the Archies\". The additional context provided (about it being a fictional band, Ron Dante, etc.) is supplementary factual information that does not contradict the core answer."
+    },
+    {
+      "id": "nq_validation_95",
+      "question": "where is the tibia and fibula bone located?",
+      "student_answer": "The tibia and fibula are the two bones located in the lower leg, between the knee and the ankle. The tibia, or shinbone, is the larger and stronger of the two and is positioned on the inner side, while the thinner fibula runs parallel to it on the outer side. Together, they provide structural support and serve as attachment points for muscles in the leg.\n\n<answer>lower leg</answer>",
+      "ground_truths": [
+        "leg"
+      ],
+      "correct": true,
+      "explanation": "The student's answer specifies \"lower leg,\" which is a more precise location within the general \"leg\" region identified by the ground truth. Since \"lower leg\" is a specific part of the \"leg,\" the answers are semantically equivalent and the student provides the correct factual information.",
+      "raw_judge_response": "CORRECT: The student's answer specifies \"lower leg,\" which is a more precise location within the general \"leg\" region identified by the ground truth. Since \"lower leg\" is a specific part of the \"leg,\" the answers are semantically equivalent and the student provides the correct factual information."
+    },
+    {
+      "id": "nq_validation_99",
+      "question": "who plays noah newman on the young and the restless?",
+      "student_answer": "Noah Newman on The Young and the Restless has been portrayed by several actors over the years, but the most recent and longest-running portrayal is by actor Robert Adamson. He first took over the role in 2013 and has been a prominent figure in the character's storylines since then. <answer>Robert Adamson</answer>",
+      "ground_truths": [
+        "Robert Gillespie Adamson IV"
+      ],
+      "correct": true,
+      "explanation": "The student answer correctly identifies the actor as Robert Adamson, which is the common professional name for Robert Gillespie Adamson IV. The core factual information matches the ground truth.",
+      "raw_judge_response": "CORRECT: The student answer correctly identifies the actor as Robert Adamson, which is the common professional name for Robert Gillespie Adamson IV. The core factual information matches the ground truth."
+    },
+    {
+      "id": "nq_validation_98",
+      "question": "types of skiing in the winter olympics 2018?",
+      "student_answer": "The 2018 Winter Olympics in PyeongChang featured six main types of skiing disciplines: Alpine Skiing, Cross-Country Skiing, Ski Jumping, Nordic Combined, Freestyle Skiing, and Snowboarding. These categories were further broken down into numerous individual events, such as slalom, moguls, and halfpipe. <answer>Alpine, Cross-Country, Ski Jumping, Nordic Combined, Freestyle, Snowboarding</answer>",
+      "ground_truths": [
+        "Slalom",
+        "Downhill",
+        "Super-G",
+        "Giant slalom",
+        "Slalom – (SC)"
+      ],
+      "correct": false,
+      "explanation": "The student answer lists broad skiing disciplines (e.g., Alpine Skiing, Freestyle Skiing), while the ground truth answer lists specific events within those disciplines (e.g., Slalom, Downhill). The provided information is not the same.",
+      "raw_judge_response": "INCORRECT: The student answer lists broad skiing disciplines (e.g., Alpine Skiing, Freestyle Skiing), while the ground truth answer lists specific events within those disciplines (e.g., Slalom, Downhill). The provided information is not the same."
+    }
+  ]
+}
